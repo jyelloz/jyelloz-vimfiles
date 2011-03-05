@@ -1,8 +1,8 @@
 set nocompatible
 set hidden
 
-call pathogen#runtime_append_all_bundles("vimpyre")
-call pathogen#helptags()
+call pathogen#runtime_append_all_bundles ("vimpyre")
+call pathogen#helptags ()
 
 " {{{ key bindings
 let mapleader = ","
@@ -121,4 +121,5 @@ set tags+=./tags,~/tags,~/.vim/tags
 
 set exrc
 
-" vim: set foldmethod=marker
+" vim: set foldmethod=marker foldmarker={{{,}}}
+
