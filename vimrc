@@ -5,7 +5,7 @@ set hidden
 let g:snips_author = "Jordan Yelloz"
 " }}}
 
-call pathogen#runtime_append_all_bundles ("vimpyre")
+call pathogen#runtime_append_all_bundles ()
 call pathogen#helptags ()
 
 " {{{ key bindings

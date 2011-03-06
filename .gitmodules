@@ -1,0 +1,33 @@
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/msanders/snipmate.vim
+[submodule "bundle/blackboard.vim"]
+	path = bundle/blackboard.vim
+	url = https://github.com/vim-scripts/blackboard.vim.git
+[submodule "bundle/Command-T"]
+	path = bundle/Command-T
+	url = https://github.com/vim-scripts/Command-T.git
+[submodule "bundle/fugitive.vim"]
+	path = bundle/fugitive.vim
+	url = https://github.com/vim-scripts/fugitive.vim.git
+[submodule "bundle/genindent.vim"]
+	path = bundle/genindent.vim
+	url = https://github.com/vim-scripts/genindent.vim.git
+[submodule "bundle/html5.vim"]
+	path = bundle/html5.vim
+	url = https://github.com/vim-scripts/html5.vim.git
+[submodule "bundle/inkpot"]
+	path = bundle/inkpot
+	url = https://github.com/vim-scripts/inkpot.git
+[submodule "bundle/molokai"]
+	path = bundle/molokai
+	url = https://github.com/vim-scripts/molokai.git
+[submodule "bundle/robokai"]
+	path = bundle/robokai
+	url = https://github.com/vim-scripts/robokai.git
+[submodule "bundle/Tabular"]
+	path = bundle/Tabular
+	url = https://github.com/vim-scripts/Tabular.git
+[submodule "bundle/The-NERD-Commenter"]
+	path = bundle/The-NERD-Commenter
+	url = https://github.com/vim-scripts/The-NERD-Commenter.git
