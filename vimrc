@@ -93,7 +93,7 @@ augroup END
 
 " {{{ Taglist options
 let Tlist_File_Fold_Auto_Close = 1
-"let Tlist_Ctags_Cmd = 'ctags-vala'
+let Tlist_Ctags_Cmd = 'anjuta-tags'
 let tlist_vala_settings='c#;g:enum;s:struct;i:interface;c:class;m:method'
 " }}}
 
