@@ -1,6 +1,10 @@
 set nocompatible
 set hidden
 
+" {{{ snipMate options
+let g:snips_author = "Jordan Yelloz"
+" }}}
+
 call pathogen#runtime_append_all_bundles ("vimpyre")
 call pathogen#helptags ()
 
