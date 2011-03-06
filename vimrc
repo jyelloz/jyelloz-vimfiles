@@ -58,7 +58,11 @@ set virtualedit=all
 set bs=indent,eol,start
 set linebreak
 
-if has("gui_running")
+if has ("gui_macvim")
+    set guifont=Terminus:h20
+    set noantialias
+    set fuoptions=maxhorz,maxvert
+elseif has ("gui_running")
     set number
     "set guifont=Monospace\ 12
     set guifont=Terminus\ 12
@@ -125,5 +129,5 @@ set tags+=./tags,~/tags,~/.vim/tags
 
 set exrc
 
-" vim: set foldmethod=marker foldmarker={{{,}}}
+" vim: set foldmethod=marker foldmarker={{{,}}} :
 
