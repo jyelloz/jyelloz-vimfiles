@@ -72,6 +72,8 @@ else
 endif
 
 set background=dark
+let g:molokai_original = 0
+colorscheme molokai
 
 set showmatch
 highlight WhitespaceEOL ctermbg=red guibg=red
