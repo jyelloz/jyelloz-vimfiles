@@ -62,6 +62,7 @@ if has ("gui_macvim")
     set guifont=Terminus:h20
     set noantialias
     set fuoptions=maxhorz,maxvert
+    set number
 elseif has ("gui_running")
     set number
     "set guifont=Monospace\ 12
