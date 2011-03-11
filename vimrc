@@ -31,6 +31,8 @@ nmap <silent> <S-tab> :silent bp<cr>
 imap <Nul> <C-n>
 imap <C-Space> <C-n>
 imap <C-S-Space> <C-p>
+imap <D-Space> <C-n>
+imap <D-S-Space> <C-p>
 "iunmap <C-n>
 "iunmap <C-p>
 
