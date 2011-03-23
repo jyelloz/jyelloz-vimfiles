@@ -74,6 +74,10 @@ else
     " set showbreak=\>\ 
 endif
 
+if $COLORTERM == 'gnome-terminal'
+    set t_Co=256
+endif
+
 set background=dark
 let g:molokai_original = 0
 colorscheme molokai
@@ -128,6 +132,15 @@ autocmd BufRead,BufNewFile *.tac set filetype=python
 autocmd BufRead,BufNewFile wscript* set filetype=python
 autocmd BufRead,BufNewFile /boot/grub/grub.conf set fileencoding=latin1
 autocmd BufRead,BufNewFile *-bugreport.txt set filetype=gdb
+" }}}
+
+" {{{ syntaxcomplete
+if has("autocmd") && exists("+omnifunc")
+    autocmd Filetype *
+                \   if &omnifunc == "" |
+                \       setlocal omnifunc=syntaxcomplete#Complete |
+                \   endif
+endif
 " }}}
 
 set tags+=./tags,~/tags,~/.vim/tags

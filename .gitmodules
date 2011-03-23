@@ -34,3 +34,9 @@
 [submodule "bundle/Align"]
 	path = bundle/Align
 	url = https://github.com/vim-scripts/Align.git
+[submodule "bundle/manpageview"]
+	path = bundle/manpageview
+	url = https://github.com/vim-scripts/ManPageView.git
+[submodule "bundle/syntaxcomplete"]
+	path = bundle/syntaxcomplete
+	url = https://github.com/vim-scripts/SyntaxComplete.git
