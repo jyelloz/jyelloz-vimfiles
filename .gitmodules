@@ -49,3 +49,12 @@
 [submodule "bundle/gtk-vim-syntax"]
 	path = bundle/gtk-vim-syntax
 	url = https://github.com/vim-scripts/gtk-vim-syntax.git
+[submodule "bundle/pyflakes"]
+	path = bundle/pyflakes
+	url = https://github.com/vim-scripts/pyflakes.vim.git
+[submodule "bundle/pythonhelper"]
+	path = bundle/pythonhelper
+	url = https://github.com/vim-scripts/pythonhelper.git
+[submodule "bundle/python"]
+	path = bundle/python
+	url = https://github.com/vim-scripts/python.vim.git
