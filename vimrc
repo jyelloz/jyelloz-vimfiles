@@ -45,6 +45,8 @@ set modeline
 set fileformats+=mac
 set encoding=utf-8
 
+set cinoptions='(0,W4,m1'
+
 " {{{ tab behavior
 set sts=4
 set tabstop=4
