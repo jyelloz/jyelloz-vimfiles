@@ -103,10 +103,10 @@ set smartcase
 
 " {{{ vala commands
 augroup vala
-    autocmd BufRead,BufNewFile *.vala set filetype=vala
-    autocmd BufRead,BufNewFile *.vapi set filetype=vala
-    autocmd BufEnter,FileType *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
-    autocmd BufEnter,FileType *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
+    autocmd BufRead,BufNewFile *.vala setlocal filetype=vala
+    autocmd BufRead,BufNewFile *.vapi setlocal filetype=vala nomodifiable readonly noswapfile
+    autocmd BufEnter,FileType *.vala setlocal efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
+    autocmd BufEnter,FileType *.vapi setlocal efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
 augroup END
 " }}}
 
@@ -142,6 +142,10 @@ if has("autocmd") && exists("+omnifunc")
                 \   if &omnifunc == "" |
                 \       setlocal omnifunc=syntaxcomplete#Complete |
                 \   endif
+    autocmd FileType python set omnifunc=pythoncomplete#Complete
+    autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+    autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+    autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 endif
 " }}}
 
