@@ -36,6 +36,11 @@ imap <D-S-Space> <C-p>
 "iunmap <C-n>
 "iunmap <C-p>
 
+"Gitv mappings
+nmap <leader>gv :Gitv --all<cr>
+nmap <leader>gV :Gitv! --all<cr>
+cabbrev git Git
+
 " }}}
 
 syntax enable
@@ -45,6 +50,8 @@ set modeline
 set fileformats+=mac
 set encoding=utf-8
 
+set textwidth=79
+set formatoptions=tcv
 set cinoptions='(0,W4,m1'
 
 " {{{ tab behavior
