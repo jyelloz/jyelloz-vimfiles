@@ -76,3 +76,9 @@
 [submodule "bundle/sessionman.vim"]
 	path = bundle/sessionman.vim
 	url = https://github.com/vim-scripts/sessionman.vim.git
+[submodule "bundle/clang"]
+	path = bundle/clang
+	url = https://github.com/Rip-Rip/clang_complete.git
+[submodule "bundle/clang_complete"]
+	path = bundle/clang_complete
+	url = https://github.com/Rip-Rip/clang_complete.git
