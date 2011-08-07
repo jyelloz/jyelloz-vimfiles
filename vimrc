@@ -1,12 +1,13 @@
 set nocompatible
 set hidden
+set noswapfile
 
 " {{{ snipMate options
 let g:snips_author = "Jordan Yelloz"
 " }}}
 
-call pathogen#runtime_append_all_bundles ()
-call pathogen#helptags ()
+call pathogen#infect ()
+" call pathogen#helptags ()
 
 " {{{ key bindings
 let mapleader = ","
