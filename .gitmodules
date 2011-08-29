@@ -70,9 +70,6 @@
 [submodule "bundle/gitv"]
 	path = bundle/gitv
 	url = https://github.com/gregsexton/gitv.git
-[submodule "bundle/gnupg"]
-	path = bundle/gnupg
-	url = https://github.com/vim-scripts/gnupg.git
 [submodule "bundle/sessionman.vim"]
 	path = bundle/sessionman.vim
 	url = https://github.com/vim-scripts/sessionman.vim.git
@@ -82,3 +79,6 @@
 [submodule "bundle/clang_complete"]
 	path = bundle/clang_complete
 	url = https://github.com/Rip-Rip/clang_complete.git
+[submodule "bundle/vim-gnupg"]
+	path = bundle/vim-gnupg
+	url = git://gitorious.org/vim-gnupg/vim-gnupg.git
