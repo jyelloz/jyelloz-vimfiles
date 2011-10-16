@@ -6,8 +6,13 @@ set noswapfile
 let g:snips_author = "Jordan Yelloz"
 " }}}
 
-call pathogen#infect ()
+" XXX: https://github.com/tpope/vim-pathogen/issues/38
+" call pathogen#infect ()
+call pathogen#runtime_append_all_bundles ()
 " call pathogen#helptags ()
+
+syntax enable
+filetype plugin indent on
 
 " {{{ key bindings
 let mapleader = ","
