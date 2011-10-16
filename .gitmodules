@@ -51,7 +51,7 @@
 	url = https://github.com/vim-scripts/gtk-vim-syntax.git
 [submodule "bundle/pyflakes"]
 	path = bundle/pyflakes
-	url = https://github.com/vim-scripts/pyflakes.vim.git
+	url = https://github.com/kevinw/pyflakes-vim.git
 [submodule "bundle/pythonhelper"]
 	path = bundle/pythonhelper
 	url = https://github.com/vim-scripts/pythonhelper.git
@@ -82,3 +82,6 @@
 [submodule "bundle/vim-gnupg"]
 	path = bundle/vim-gnupg
 	url = git://gitorious.org/vim-gnupg/vim-gnupg.git
+[submodule "bundle/vimpdb"]
+	path = bundle/vimpdb
+	url = https://github.com/gotcha/vimpdb.git
