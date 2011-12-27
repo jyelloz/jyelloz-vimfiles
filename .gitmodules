@@ -4,9 +4,6 @@
 [submodule "bundle/blackboard.vim"]
 	path = bundle/blackboard.vim
 	url = https://github.com/vim-scripts/blackboard.vim.git
-[submodule "bundle/Command-T"]
-	path = bundle/Command-T
-	url = https://github.com/vim-scripts/Command-T.git
 [submodule "bundle/fugitive.vim"]
 	path = bundle/fugitive.vim
 	url = https://github.com/vim-scripts/fugitive.vim.git
