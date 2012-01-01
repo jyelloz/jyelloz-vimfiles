@@ -34,12 +34,13 @@ nmap <silent> <tab> :silent bn<cr>
 nmap <silent> <S-tab> :silent bp<cr>
 
 " control-space completion
-imap <Nul> <C-n>
-imap <C-Space> <C-n>
-imap <C-S-Space> <C-p>
-imap <D-Space> <C-n>
-imap <D-S-Space> <C-p>
-"iunmap <C-n>
+inoremap <Nul> <C-o>
+inoremap <C-@> <C-x><C-o>
+" imap <C-Space> <C-x> <C-o>
+" imap <C-S-Space> <C-p>
+" imap <D-Space> <C-x> <C-o>
+" imap <D-S-Space> <C-p>
+"iunmap <C-x> <C-o>
 "iunmap <C-p>
 
 "Gitv mappings
@@ -49,10 +50,7 @@ cabbrev git Git
 
 " }}}
 
-syntax enable
-filetype plugin indent on
-
-set modeline
+" set modeline
 set fileformats+=mac
 set encoding=utf-8
 
@@ -134,32 +132,79 @@ let NERDSpaceDelims       = 1
 let NERDRemoveExtraSpaces = 1
 " }}}
 
+" {{{ NERDTree
+
+nnoremap <silent> <F2> :silent NERDTreeToggle<CR>
+nnoremap <silent> <F3> :silent NERDTreeFind<CR>
+
+let NERDTreeIgnore=['\.pyc$', '\.o$']
+
+
+" }}}
+
 " {{{ syntax adjustments
 "Use the C syntax for varnish source files.
-autocmd BufRead,BufNewFile *.vcl set filetype=vcl
+autocmd BufRead,BufNewFile *.vcl setlocal filetype=vcl
 autocmd! Syntax vcl source $VIMRUNTIME/syntax/c.vim
 "Use the JavaScript syntax for JSON data.
-autocmd BufRead,BufNewFile *.json set filetype=json
+autocmd BufRead,BufNewFile *.json setlocal filetype=json
 autocmd! Syntax json source $VIMRUNTIME/syntax/yaml.vim
-"Use the Python syntax for twisted configurations.
-autocmd BufRead,BufNewFile *.tac set filetype=python
-"autocmd BufRead,BufNewFile wscript set filetype=python
-autocmd BufRead,BufNewFile wscript* set filetype=python
-autocmd BufRead,BufNewFile /boot/grub/grub.conf set fileencoding=latin1
-autocmd BufRead,BufNewFile *-bugreport.txt set filetype=gdb
+
+" special python files
+autocmd BufRead,BufNewFile fabfile setlocal filetype=python
+autocmd BufRead,BufNewFile *.tac setlocal filetype=python
+autocmd BufRead,BufNewFile wscript* setlocal filetype=python
+
+autocmd BufRead,BufNewFile /boot/grub*/grub.conf setlocal fileencoding=latin1
+autocmd BufRead,BufNewFile *-bugreport.txt setlocal filetype=gdb
+
+autocmd BufRead,BufNewFile *.less setlocal filetype=sass
 " }}}
 
 " {{{ syntaxcomplete
-if has ("autocmd") && exists ("+omnifunc")
-    autocmd Filetype *
-                \   if &omnifunc == "" |
-                \       setlocal omnifunc=syntaxcomplete#Complete |
-                \   endif
-    autocmd FileType python set omnifunc=pythoncomplete#Complete
-    autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-    autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-    autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-endif
+" if has ("autocmd") && exists ("+omnifunc")
+    " autocmd Filetype *
+                " \   if &omnifunc == "" |
+                " \       setlocal omnifunc=syntaxcomplete#Complete |
+                " \   endif
+    " autocmd FileType python set omnifunc=pythoncomplete#Complete
+    " autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+    " autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+    " autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+" endif
+" }}}
+
+" {{{ python virtualenv
+
+python << EOF
+from os import environ as env
+from os.path import join
+
+virtual_env = env.get('VIRTUAL_ENV')
+if virtual_env:
+    activate_this_py = join(virtual_env, 'bin', 'activate_this.py')
+    execfile(activate_this_py, dict(__file__=activate_this_py))
+
+EOF
+
+" }}}
+
+" {{{ ropevim
+
+let ropevim_enable_shortcuts  = 0
+let ropevim_vim_completion    = 0
+let ropevim_extended_complete = 1
+let ropevim_guess_project     = 1
+let ropevim_goto_def_newwin   = 1
+nmap <silent> <leader>gd :RopeGotoDefinition<CR>
+
+" }}}
+
+" {{{ clang_complete
+
+let g:clang_library_path = '/usr/lib64/llvm'
+let g:clang_use_library  = 1
+
 " }}}
 
 set tags+=./tags,~/tags,~/.vim/tags
