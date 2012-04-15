@@ -25,9 +25,6 @@
 [submodule "bundle/Tabular"]
 	path = bundle/Tabular
 	url = https://github.com/vim-scripts/Tabular.git
-[submodule "bundle/The-NERD-Commenter"]
-	path = bundle/The-NERD-Commenter
-	url = https://github.com/vim-scripts/The-NERD-Commenter.git
 [submodule "bundle/Align"]
 	path = bundle/Align
 	url = https://github.com/vim-scripts/Align.git
@@ -57,7 +54,7 @@
 	url = https://github.com/tpope/vim-pathogen.git
 [submodule "bundle/info"]
 	path = bundle/info
-	url = http://github.com/vim-scripts/info.vim
+	url = https://github.com/vim-scripts/info.vim
 [submodule "bundle/Modeliner"]
 	path = bundle/Modeliner
 	url = https://github.com/vim-scripts/Modeliner.git
@@ -88,3 +85,18 @@
 [submodule "bundle/vim-pony"]
 	path = bundle/vim-pony
 	url = git://github.com/rainerborene/vim-pony.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = https://github.com/groenewege/vim-less.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git://github.com/majutsushi/tagbar
+[submodule "bundle/closetag"]
+	path = bundle/closetag
+	url = https://github.com/docunext/closetag.vim.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
