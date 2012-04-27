@@ -74,7 +74,7 @@
 	path = bundle/vim-gnupg
 	url = git://gitorious.org/vim-gnupg/vim-gnupg.git
 [submodule "bundle/vimpdb"]
-	path = bundle/vimpdb
+	path = vimpdb
 	url = https://github.com/gotcha/vimpdb.git
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
