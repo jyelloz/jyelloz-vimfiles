@@ -158,7 +158,8 @@ autocmd BufRead,BufNewFile wscript* setlocal filetype=python
 autocmd BufRead,BufNewFile /boot/grub*/grub.conf setlocal fileencoding=latin1
 autocmd BufRead,BufNewFile *-bugreport.txt setlocal filetype=gdb
 
-autocmd BufRead,BufNewFile *.less setlocal filetype=sass
+autocmd BufRead,BufNewFile *.less setfiletype less
+
 " }}}
 
 " {{{ syntaxcomplete
