@@ -122,9 +122,16 @@ augroup END
 " }}}
 
 " {{{ Taglist options
-let Tlist_File_Fold_Auto_Close = 1
-let Tlist_Ctags_Cmd = 'anjuta-tags'
-let tlist_vala_settings='c#;g:enum;s:struct;i:interface;c:class;m:method'
+" let Tlist_File_Fold_Auto_Close = 1
+" let Tlist_Ctags_Cmd = 'anjuta-tags'
+" let tlist_vala_settings='c#;g:enum;s:struct;i:interface;c:class;m:method'
+" }}}
+
+" {{{ tagbar options
+nnoremap <silent> <F4> :TagbarToggle<CR>
+let g:tagbar_ctags_bin = 'anjuta-tags'
+let g:tagbar_left = 1
+let g:tagbar_autoshowtag = 1
 " }}}
 
 " {{{ NERDCommenter
@@ -175,20 +182,25 @@ autocmd BufRead,BufNewFile *.less setfiletype less
 " endif
 " }}}
 
-" {{{ python virtualenv
-
-python << EOF
-from os import environ as env
-from os.path import join
-
-virtual_env = env.get('VIRTUAL_ENV')
-if virtual_env:
-    activate_this_py = join(virtual_env, 'bin', 'activate_this.py')
-    execfile(activate_this_py, dict(__file__=activate_this_py))
-
-EOF
+" {{{ python-mode
+let g:pymode_lint_ignore = "E221"
 
 " }}}
+
+" " {{{ python virtualenv
+
+" python << EOF
+" from os import environ as env
+" from os.path import join
+
+" virtual_env = env.get('VIRTUAL_ENV')
+" if virtual_env:
+    " activate_this_py = join(virtual_env, 'bin', 'activate_this.py')
+    " execfile(activate_this_py, dict(__file__=activate_this_py))
+
+" EOF
+
+" " }}}
 
 " {{{ ropevim
 
@@ -205,6 +217,12 @@ nmap <silent> <leader>gd :RopeGotoDefinition<CR>
 
 let g:clang_library_path = '/usr/lib64/llvm'
 let g:clang_use_library  = 1
+
+" }}}
+
+" {{{ ctrlp
+
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
 " }}}
 
