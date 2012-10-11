@@ -13,15 +13,9 @@
 [submodule "bundle/html5.vim"]
 	path = bundle/html5.vim
 	url = https://github.com/vim-scripts/html5.vim.git
-[submodule "bundle/inkpot"]
-	path = bundle/inkpot
-	url = https://github.com/vim-scripts/inkpot.git
 [submodule "bundle/molokai"]
 	path = bundle/molokai
 	url = https://github.com/vim-scripts/molokai.git
-[submodule "bundle/robokai"]
-	path = bundle/robokai
-	url = https://github.com/vim-scripts/robokai.git
 [submodule "bundle/Tabular"]
 	path = bundle/Tabular
 	url = https://github.com/vim-scripts/Tabular.git
