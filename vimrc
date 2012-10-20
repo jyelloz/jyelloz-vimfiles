@@ -68,6 +68,7 @@ set expandtab
 " {{{ visual options
 set ruler
 set laststatus=2
+set cursorline
 set showcmd
 set virtualedit=all
 set bs=indent,eol,start
