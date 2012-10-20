@@ -227,6 +227,10 @@ let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
 " }}}
 
+" {{{ powerline
+let g:Powerline_symbols = 'unicode'
+" }}}
+
 set tags+=./tags,~/tags,~/.vim/tags
 
 set exrc
