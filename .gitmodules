@@ -103,3 +103,9 @@
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "bundle/vim-bitbake"]
+	path = bundle/vim-bitbake
+	url = https://github.com/kergoth/vim-bitbake.git
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
