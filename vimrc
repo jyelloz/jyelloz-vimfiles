@@ -8,7 +8,7 @@ let g:snips_author = "Jordan Yelloz"
 
 " XXX: https://github.com/tpope/vim-pathogen/issues/38
 " call pathogen#infect ()
-call pathogen#runtime_append_all_bundles ()
+call pathogen#incubate ()
 " call pathogen#helptags ()
 
 syntax enable
@@ -236,4 +236,3 @@ set tags+=./tags,~/tags,~/.vim/tags
 set exrc
 
 " vim: set foldmethod=marker foldmarker={{{,}}} :
-
