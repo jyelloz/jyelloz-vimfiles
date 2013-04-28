@@ -34,7 +34,7 @@ snippet #if
 	#endif
 # Header Include-Guard
 snippet once
-	#ifndef ${1:`'__' . toupper(Filename('$1_H', 'UNTITLED_H')) . '__'`}
+	#ifndef ${1:`'__' . substitute(toupper(Filename('$1_H', 'UNTITLED_H')), '[^A-Z]', '_', 'g') . '__'`}
 
 	#define $1
 
