@@ -4,6 +4,7 @@ set noswapfile
 
 " {{{ snipMate options
 let g:snips_author = "Jordan Yelloz"
+let g:snippets_dir = $HOME . "/.vim/snippets"
 " }}}
 
 " XXX: https://github.com/tpope/vim-pathogen/issues/38
