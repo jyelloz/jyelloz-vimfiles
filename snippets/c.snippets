@@ -34,12 +34,12 @@ snippet #if
 	#endif
 # Header Include-Guard
 snippet once
-	#ifndef ${1:`'__' . substitute(toupper(Filename('$1_H', 'UNTITLED_H')), '[^A-Z]', '_', 'g') . '__'`}
-	#define $1
+	#ifndef __${1:`substitute(toupper(Filename('$1_H', 'UNTITLED_H')), '[^A-Z0-9]', '_', 'g')`}__
+	#define __$1__
 
 	${2}
 
-	#endif /* $1 */
+	#endif /* __$1__ */
 # If Condition
 snippet if
 	if (${1:/* condition */}) {
