@@ -52,9 +52,6 @@
 [submodule "bundle/Modeliner"]
 	path = bundle/Modeliner
 	url = https://github.com/vim-scripts/Modeliner.git
-[submodule "bundle/gitv"]
-	path = bundle/gitv
-	url = https://github.com/gregsexton/gitv.git
 [submodule "bundle/sessionman.vim"]
 	path = bundle/sessionman.vim
 	url = https://github.com/vim-scripts/sessionman.vim.git
@@ -79,9 +76,6 @@
 [submodule "bundle/vim-pony"]
 	path = bundle/vim-pony
 	url = git://github.com/rainerborene/vim-pony.git
-[submodule "bundle/fugitive"]
-	path = bundle/fugitive
-	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
@@ -115,3 +109,9 @@
 [submodule "bundle/vim-git"]
 	path = bundle/vim-git
 	url = https://github.com/tpope/vim-git.git
+[submodule "bundle/opengl.vim"]
+	path = bundle/opengl.vim
+	url = https://github.com/beyondmarc/opengl.vim.git
+[submodule "bundle/glsl.vim"]
+	path = bundle/glsl.vim
+	url = https://github.com/beyondmarc/glsl.vim.git
