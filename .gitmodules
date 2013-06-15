@@ -96,7 +96,7 @@
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
-	url = https://github.com/Lokaltog/vim-powerline.git
+	url = https://github.com/Lokaltog/powerline.git
 [submodule "bundle/vim-bitbake"]
 	path = bundle/vim-bitbake
 	url = https://github.com/kergoth/vim-bitbake.git
