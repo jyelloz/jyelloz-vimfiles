@@ -1,3 +1,3 @@
-set nosmartindent
-set noautoindent
-set cindent
+setlocal nosmartindent
+setlocal noautoindent
+setlocal cindent

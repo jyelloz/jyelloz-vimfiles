@@ -20,4 +20,4 @@ else
   runtime! syntax/gtk.vim
 endif
 
-" vim: set ft=vim :
+" vim: setlocal ft=vim :
