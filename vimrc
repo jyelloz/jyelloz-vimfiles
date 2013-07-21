@@ -186,7 +186,7 @@ autocmd BufRead,BufNewFile *.less setfiletype less
 
 " {{{ python-mode
 let g:pymode_lint_ignore = "E221"
-
+let g:pymode_lint_signs_always_visible = "1"
 " }}}
 
 " " {{{ python virtualenv
