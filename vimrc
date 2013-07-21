@@ -108,6 +108,13 @@ set ignorecase
 set smartcase
 " }}}
 
+" {{{ bitbake commands
+augroup bitbake
+    autocmd BufRead,BufNewFile *.bb setlocal filetype=bitbake
+    autocmd BufRead,BufNewFile *.bbclass setlocal filetype=bitbake
+augroup END
+" }}}
+
 " {{{ vala commands
 augroup vala
     autocmd BufRead,BufNewFile *.vala setlocal filetype=vala
