@@ -1,12 +1,6 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = https://github.com/msanders/snipmate.vim
-[submodule "bundle/blackboard.vim"]
-	path = bundle/blackboard.vim
-	url = https://github.com/vim-scripts/blackboard.vim.git
-[submodule "bundle/fugitive.vim"]
-	path = bundle/fugitive.vim
-	url = https://github.com/vim-scripts/fugitive.vim.git
 [submodule "bundle/genindent.vim"]
 	path = bundle/genindent.vim
 	url = https://github.com/vim-scripts/genindent.vim.git
@@ -115,3 +109,6 @@
 [submodule "bundle/vim-css3-syntax"]
 	path = bundle/vim-css3-syntax
 	url = https://github.com/hail2u/vim-css3-syntax.git
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
