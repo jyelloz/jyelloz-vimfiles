@@ -43,12 +43,6 @@ inoremap <C-@> <C-x><C-o>
 " imap <D-S-Space> <C-p>
 "iunmap <C-x> <C-o>
 "iunmap <C-p>
-
-"Gitv mappings
-nmap <leader>gv :Gitv --all<cr>
-nmap <leader>gV :Gitv! --all<cr>
-cabbrev git Git
-
 " }}}
 
 " set modeline
@@ -121,6 +115,10 @@ augroup vala
     autocmd BufEnter,FileType *.vala setlocal efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
     autocmd BufEnter,FileType *.vapi setlocal efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
 augroup END
+" }}}
+
+" {{{ git
+autocmd BufReadPost COMMIT_EDITMSG exe "normal! gg"
 " }}}
 
 " {{{ Taglist options
