@@ -224,7 +224,7 @@ let g:clang_use_library  = 1
 
 " {{{ ctrlp
 
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\.pyc$'
 
 " }}}
 
