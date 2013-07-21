@@ -63,7 +63,7 @@
 	url = https://github.com/Rip-Rip/clang_complete.git
 [submodule "bundle/vim-gnupg"]
 	path = bundle/vim-gnupg
-	url = git://gitorious.org/vim-gnupg/vim-gnupg.git
+	url = https://git.gitorious.org/vim-gnupg/vim-gnupg.git
 [submodule "bundle/vimpdb"]
 	path = vimpdb
 	url = https://github.com/gotcha/vimpdb.git
@@ -73,15 +73,12 @@
 [submodule "bundle/project"]
 	path = bundle/project
 	url = https://github.com/vim-scripts/project.tar.gz.git
-[submodule "bundle/vim-pony"]
-	path = bundle/vim-pony
-	url = git://github.com/rainerborene/vim-pony.git
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
-	url = git://github.com/majutsushi/tagbar
+	url = https://github.com/majutsushi/tagbar
 [submodule "bundle/closetag"]
 	path = bundle/closetag
 	url = https://github.com/docunext/closetag.vim.git
