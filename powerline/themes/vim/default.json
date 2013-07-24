@@ -7,6 +7,9 @@
 		"modified_indicator": {
 			"args": { "text": "+" }
 		},
+		"readonly_indicator": {
+			"args": { "text": "RO" }
+		},
 		"line_percent": {
 			"args": { "gradient": true },
 			"after": "%"
