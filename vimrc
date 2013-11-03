@@ -257,4 +257,4 @@ set tags+=./tags,~/tags,~/.vim/tags
 
 set exrc
 
-" vim: set foldmethod=marker foldmarker={{{,}}} :
+" vim: foldmethod=marker foldmarker={{{,}}} :
