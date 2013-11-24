@@ -191,6 +191,11 @@ let g:pymode_lint_ignore = "E221"
 let g:pymode_lint_signs_always_visible = "1"
 " }}}
 
+" {{{ jedi-vim
+" let g:jedi#auto_initialization = 0
+let g:jedi#use_tabs_not_buffers = 0
+" }}}
+
 " " {{{ python virtualenv
 
 " python << EOF
