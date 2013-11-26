@@ -196,21 +196,6 @@ let g:pymode_lint_signs_always_visible = "1"
 let g:jedi#use_tabs_not_buffers = 0
 " }}}
 
-" " {{{ python virtualenv
-
-" python << EOF
-" from os import environ as env
-" from os.path import join
-
-" virtual_env = env.get('VIRTUAL_ENV')
-" if virtual_env:
-    " activate_this_py = join(virtual_env, 'bin', 'activate_this.py')
-    " execfile(activate_this_py, dict(__file__=activate_this_py))
-
-" EOF
-
-" " }}}
-
 " {{{ ropevim
 
 let ropevim_enable_shortcuts  = 0
