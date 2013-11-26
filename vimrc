@@ -184,11 +184,27 @@ autocmd BufRead,BufNewFile *.less setfiletype less
     " autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
     " autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 " endif
+    autocmd Syntax handlebars setlocal indentexpr=HtmlIndent() foldmarker=[[[,]]]
 " }}}
 
 " {{{ python-mode
-let g:pymode_lint_ignore = "E221"
+" let g:pymode = 1
+let g:pymode_folding = 0
+let g:pymode_signs = 0
+let g:pymode_motion = 0
+let g:pymode_rope = 0
+let g:pymode_run = 0
+let g:pymode_lint_write = 0
+let g:pymode_lint_signs = 0
+let g:pymode_lint_checker = 'pep8'
+let g:pymode_lint_ignore = "E221,C0110,C0111,C0103,W0142,W0702,E1101,R0903,R0901,W061,R0201"
 let g:pymode_lint_signs_always_visible = "1"
+
+let g:pymode_rope_autocomplete_map = ""
+let g:pymode_run_key = ""
+let g:pymode_doc_key = ""
+let g:pymode_breakpoint_key = ""
+
 " }}}
 
 " {{{ jedi-vim
@@ -203,7 +219,7 @@ let ropevim_vim_completion    = 0
 let ropevim_extended_complete = 1
 let ropevim_guess_project     = 1
 let ropevim_goto_def_newwin   = 1
-nmap <silent> <leader>gd :RopeGotoDefinition<CR>
+" nmap <silent> <leader>gd :RopeGotoDefinition<CR>
 
 " }}}
 
