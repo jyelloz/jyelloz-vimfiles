@@ -130,3 +130,6 @@
 [submodule "bundle/vim-ledger"]
 	path = bundle/vim-ledger
 	url = https://github.com/ledger/vim-ledger.git
+[submodule "bundle/sieve.vim"]
+	path = bundle/sieve.vim
+	url = https://github.com/vim-scripts/sieve.vim.git
