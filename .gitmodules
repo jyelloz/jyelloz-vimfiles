@@ -133,3 +133,6 @@
 [submodule "bundle/sieve.vim"]
 	path = bundle/sieve.vim
 	url = https://github.com/vim-scripts/sieve.vim.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
