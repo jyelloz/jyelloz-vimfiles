@@ -142,3 +142,6 @@
 [submodule "bundle/jade.vim"]
 	path = bundle/jade.vim
 	url = https://github.com/vim-scripts/jade.vim.git
+[submodule "bundle/haproxy"]
+	path = bundle/haproxy
+	url = https://github.com/vim-scripts/haproxy.git
