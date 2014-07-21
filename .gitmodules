@@ -145,3 +145,6 @@
 [submodule "bundle/haproxy"]
 	path = bundle/haproxy
 	url = https://github.com/vim-scripts/haproxy.git
+[submodule "bundle/yaml-vim"]
+	path = bundle/yaml-vim
+	url = https://github.com/mrk21/yaml-vim.git
