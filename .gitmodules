@@ -4,9 +4,6 @@
 [submodule "bundle/genindent.vim"]
 	path = bundle/genindent.vim
 	url = https://github.com/vim-scripts/genindent.vim.git
-[submodule "bundle/html5.vim"]
-	path = bundle/html5.vim
-	url = https://github.com/vim-scripts/html5.vim.git
 [submodule "bundle/molokai"]
 	path = bundle/molokai
 	url = https://github.com/vim-scripts/molokai.git
