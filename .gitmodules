@@ -145,3 +145,6 @@
 [submodule "bundle/yaml-vim"]
 	path = bundle/yaml-vim
 	url = https://github.com/mrk21/yaml-vim.git
+[submodule "bundle/html5.vim"]
+	path = bundle/html5.vim
+	url = https://github.com/othree/html5.vim.git
