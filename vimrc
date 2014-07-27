@@ -225,7 +225,7 @@ let ropevim_goto_def_newwin   = 1
 
 " {{{ clang_complete
 
-let g:clang_library_path = '/usr/lib64/llvm'
+let g:clang_library_path = '/usr/lib64'
 let g:clang_use_library  = 1
 
 " }}}
