@@ -265,6 +265,13 @@ let g:Powerline_symbols = 'unicode'
 
 " }}}
 
+" {{{ gnupg
+
+let g:GPGPreferSymmetric = 1
+let g:GPGPreferArmor = 1
+
+" }}}
+
 set tags+=./tags,~/tags,~/.vim/tags
 
 set exrc
