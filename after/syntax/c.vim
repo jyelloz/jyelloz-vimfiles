@@ -18,6 +18,7 @@ else
   runtime! syntax/gdk.vim
   runtime! syntax/gdkpixbuf.vim
   runtime! syntax/gtk.vim
+  runtime! syntax/gstreamer.vim
 endif
 
 " vim: setlocal ft=vim :
