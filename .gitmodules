@@ -178,3 +178,6 @@
 [submodule "bundle/vim-fireplace"]
 	path = bundle/vim-fireplace
 	url = https://github.com/tpope/vim-fireplace.git
+[submodule "bundle/vim-kconfig"]
+	path = bundle/vim-kconfig
+	url = https://github.com/chrisbra/vim-kconfig
