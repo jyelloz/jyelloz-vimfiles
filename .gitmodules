@@ -51,7 +51,7 @@
 	url = https://github.com/Rip-Rip/clang_complete.git
 [submodule "bundle/vim-gnupg"]
 	path = bundle/vim-gnupg
-	url = https://git.gitorious.org/vim-gnupg/vim-gnupg.git
+	url = https://github.com/jamessan/vim-gnupg.git
 [submodule "bundle/vimpdb"]
 	path = vimpdb
 	url = https://github.com/gotcha/vimpdb.git
