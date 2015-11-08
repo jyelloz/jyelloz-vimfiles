@@ -188,16 +188,17 @@ autocmd BufRead,BufNewFile *.less setfiletype less
 " }}}
 
 " {{{ python-mode
-" let g:pymode = 1
+let g:pymode = 1
+" let g:pymode_debug = 1
 let g:pymode_folding = 0
 let g:pymode_signs = 0
 let g:pymode_motion = 0
-let g:pymode_rope = 0
+let g:pymode_rope = 1
 let g:pymode_run = 0
 let g:pymode_lint_write = 0
 let g:pymode_lint_signs = 0
-let g:pymode_lint_checker = 'pep8'
-let g:pymode_lint_ignore = "E221,C0110,C0111,C0103,W0142,W0702,E1101,R0903,R0901,W061,R0201"
+let g:pymode_lint_checker = ['pep8', 'pylint']
+" let g:pymode_lint_ignore = "E221,C0110,C0111,C0103,W0142,W0702,E1101,R0903,R0901,W061,R0201"
 let g:pymode_lint_signs_always_visible = "1"
 
 let g:pymode_rope_autocomplete_map = ""

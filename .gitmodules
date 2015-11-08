@@ -184,3 +184,6 @@
 [submodule "bundle/ack.vim"]
 	path = bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/color_coded"]
+	path = bundle/color_coded
+	url = https://github.com/jeaye/color_coded.git
