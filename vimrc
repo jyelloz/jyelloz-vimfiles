@@ -273,6 +273,10 @@ let g:GPGPreferArmor = 1
 
 " }}}
 
+" {{{ rust
+let $RUST_SRC_PATH = $HOME . "/Projects/rust/src"
+" }}}
+
 set tags+=./tags,~/tags,~/.vim/tags
 
 set exrc
