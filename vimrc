@@ -82,6 +82,8 @@ endif
 
 if $COLORTERM == 'gnome-terminal'
     set t_Co=256
+elseif strlen($VTE_VERSION) > 0
+    set t_Co=256
 endif
 
 set background=dark
