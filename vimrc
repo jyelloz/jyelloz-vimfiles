@@ -245,26 +245,7 @@ let g:Powerline_symbols = 'unicode'
 
 " {{{ airline
 
-  if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-  endif
-
-  let g:airline_left_sep = '»'
-  let g:airline_left_sep = '▶'
-  let g:airline_right_sep = '«'
-  let g:airline_right_sep = '◀'
-  " let g:airline_linecolumn_prefix = '␊ '
-  " let g:airline_linecolumn_prefix = '␤ '
-  " let g:airline_linecolumn_prefix = '¶ '
-  let g:airline_symbols.linenr = '¶'
-  " let g:airline#extensions#branch#symbol = '⎇ '
-  let g:airline#extensions#branch#symbol = ''
-  let g:airline#extensions#paste#symbol = 'ρ'
-  let g:airline#extensions#paste#symbol = 'Þ'
-  let g:airline#extensions#paste#symbol = '∥'
-  let g:airline#extensions#whitespace#symbol = 'Ξ'
-
-  let g:airline_theme = 'simple'
+  let g:airline_powerline_fonts = 1
 
 " }}}
 
