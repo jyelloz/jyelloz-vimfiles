@@ -199,3 +199,6 @@
 [submodule "bundle/airline-themes"]
 	path = bundle/airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "bundle/vim-clang"]
+	path = bundle/vim-clang
+	url = https://github.com/justmao945/vim-clang.git
