@@ -228,6 +228,8 @@ let ropevim_goto_def_newwin   = 1
 
 " {{{ clang_complete
 
+" this is disabled and vim-clang is used now
+let g:clang_complete_loaded = 1
 let g:clang_library_path = '/usr/lib64'
 let g:clang_use_library  = 1
 
