@@ -202,3 +202,6 @@
 [submodule "bundle/vim-clang"]
 	path = bundle/vim-clang
 	url = https://github.com/justmao945/vim-clang.git
+[submodule "bundle/unite.vim"]
+	path = bundle/unite.vim
+	url = https://github.com/Shougo/unite.vim.git
