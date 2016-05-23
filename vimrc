@@ -235,6 +235,15 @@ let g:clang_use_library  = 1
 
 " }}}
 
+" {{{ vim-clang
+
+let g:clang_c_completeopt = 'menuone,preview'
+let g:clang_auto = 0
+let g:clang_check_syntax_auto = 1
+let g:clang_include_sysheaders = 1
+
+" }}}
+
 " {{{ ctrlp
 
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\.pyc$'
