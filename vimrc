@@ -268,6 +268,8 @@ let g:GPGPreferArmor = 1
 " }}}
 
 " {{{ rust
+" disable racer for now
+let g:loaded_racer = 1
 let $RUST_SRC_PATH = $HOME . "/Projects/rust/src"
 " }}}
 
