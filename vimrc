@@ -105,7 +105,6 @@ set nohlsearch
 set hlsearch
 set ignorecase
 set smartcase
-set grepprg=ag\ --nogroup\ --nocolor
 " }}}
 
 " {{{ bitbake commands
@@ -280,6 +279,7 @@ let $RUST_SRC_PATH = $HOME . "/Projects/rust/src"
 if executable('ag')
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor
+  let g:ackprg = 'ag --nogroup --nocolor --column'
 
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
