@@ -205,3 +205,6 @@
 [submodule "bundle/unite.vim"]
 	path = bundle/unite.vim
 	url = https://github.com/Shougo/unite.vim.git
+[submodule "bundle/gitolite.vim"]
+	path = bundle/vim-gitolite
+	url = https://github.com/tmatilai/gitolite.vim.git
