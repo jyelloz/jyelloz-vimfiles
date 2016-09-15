@@ -163,9 +163,6 @@
 [submodule "bundle/vim-misc"]
 	path = bundle/vim-misc
 	url = https://github.com/xolox/vim-misc.git
-[submodule "bundle/vim-lua-inspect"]
-	path = bundle/vim-lua-inspect
-	url = https://github.com/xolox/vim-lua-inspect.git
 [submodule "bundle/vim-gobject"]
 	path = bundle/vim-gobject
 	url = https://github.com/megous/vim-gobject.git
@@ -208,3 +205,6 @@
 [submodule "bundle/gitolite.vim"]
 	path = bundle/vim-gitolite
 	url = https://github.com/tmatilai/gitolite.vim.git
+[submodule "bundle/lua-support"]
+	path = bundle/lua-support
+	url = https://github.com/WolfgangMehner/lua-support.git
