@@ -202,9 +202,6 @@
 [submodule "bundle/gitolite.vim"]
 	path = bundle/vim-gitolite
 	url = https://github.com/tmatilai/gitolite.vim.git
-[submodule "bundle/lua-support"]
-	path = bundle/lua-support
-	url = https://github.com/WolfgangMehner/lua-support.git
 [submodule "bundle/typescript-vim"]
 	path = bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
