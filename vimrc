@@ -123,6 +123,18 @@ augroup vala
 augroup END
 " }}}
 
+" {{{ lua.vim
+"
+let lua_version = 5
+let lua_subversion = 1
+let g:lua_complete_omni = 1
+
+let g:syntastic_lua_checkers = ['luac', 'luacheck']
+" let g:syntastic_lua_checkers = ['luac']
+let g:syntastic_lua_luacheck_args = '--no-unused-args'
+
+" }}}
+
 " {{{ git
 autocmd BufReadPost COMMIT_EDITMSG exe "normal! gg"
 " }}}
