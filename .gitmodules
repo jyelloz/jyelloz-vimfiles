@@ -217,6 +217,15 @@
 [submodule "bundle/bufkill"]
 	path = bundle/bufkill
 	url = https://github.com/qpkorr/vim-bufkill.git
-[submodule "bundle/LanguageClient-neovim"]
-	path = bundle/LanguageClient-neovim
-	url = https://github.com/autozimu/LanguageClient-neovim.git
+[submodule "bundle/vim-lsp"]
+	path = bundle/vim-lsp
+	url = https://github.com/prabirshrestha/vim-lsp.git
+[submodule "bundle/asyncomplete-lsp.vim"]
+	path = bundle/asyncomplete-lsp.vim
+	url = https://github.com/prabirshrestha/asyncomplete-lsp.vim.git
+[submodule "bundle/async.vim"]
+	path = bundle/async.vim
+	url = https://github.com/prabirshrestha/async.vim.git
+[submodule "bundle/asyncomplete.vim"]
+	path = bundle/asyncomplete.vim
+	url = https://github.com/prabirshrestha/asyncomplete.vim.git
