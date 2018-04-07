@@ -279,8 +279,11 @@ let g:GPGPreferArmor = 1
 
 " }}}
 
-" {{{ ag (silver-searcher)
-if executable('ag')
+" {{{ rg or ag
+if executable('rg')
+  set grepprg=rg\ --vimgrep
+  let g:ackprg = 'ag --nogroup --nocolor --column'
+elseif executable('ag')
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor
   let g:ackprg = 'ag --nogroup --nocolor --column'
