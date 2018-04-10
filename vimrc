@@ -48,6 +48,7 @@ set encoding=utf-8
 
 set textwidth=79
 set formatoptions=tcv
+set joinspaces
 set cinoptions='(0,W4,m1'
 
 " {{{ tab behavior
