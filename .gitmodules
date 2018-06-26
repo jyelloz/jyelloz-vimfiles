@@ -220,3 +220,9 @@
 [submodule "bundle/vim-lua"]
 	path = bundle/vim-lua
 	url = https://github.com/tbastos/vim-lua
+[submodule "bundle/vim-toml"]
+	path = bundle/vim-toml
+	url = https://github.com/cespare/vim-toml.git
+[submodule "bundle/vim-toml-enhance"]
+	path = bundle/vim-toml-enhance
+	url = https://github.com/maralla/vim-toml-enhance.git
