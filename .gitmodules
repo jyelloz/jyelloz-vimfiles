@@ -226,3 +226,12 @@
 [submodule "bundle/vim-toml-enhance"]
 	path = bundle/vim-toml-enhance
 	url = https://github.com/maralla/vim-toml-enhance.git
+[submodule "bundle/vim-projectionist"]
+	path = bundle/vim-projectionist
+	url = https://github.com/tpope/vim-projectionist.git
+[submodule "bundle/vim-dotenv"]
+	path = bundle/vim-dotenv
+	url = https://github.com/tpope/vim-dotenv.git
+[submodule "bundle/vim-apathy"]
+	path = bundle/vim-apathy
+	url = https://github.com/tpope/vim-apathy.git
