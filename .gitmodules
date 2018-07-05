@@ -232,3 +232,6 @@
 [submodule "bundle/vim-apathy"]
 	path = bundle/vim-apathy
 	url = https://github.com/tpope/vim-apathy.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
