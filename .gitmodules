@@ -1,6 +1,7 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = https://github.com/msanders/snipmate.vim
+	branch = master
 [submodule "bundle/genindent.vim"]
 	path = bundle/genindent.vim
 	url = https://github.com/vim-scripts/genindent.vim.git
@@ -118,6 +119,7 @@
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = https://github.com/klen/python-mode.git
+	branch = develop
 [submodule "bundle/vim-ledger"]
 	path = bundle/vim-ledger
 	url = https://github.com/ledger/vim-ledger.git
@@ -229,3 +231,7 @@
 [submodule "bundle/LanguageClient-neovim"]
 	path = bundle/LanguageClient-neovim
 	url = https://github.com/autozimu/LanguageClient-neovim.git
+	branch = next
+[submodule "bundle/info.vim"]
+	path = bundle/info.vim
+	url = https://gitlab.com/HiPhish/info.vim.git
