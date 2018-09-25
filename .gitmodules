@@ -235,3 +235,6 @@
 [submodule "bundle/info.vim"]
 	path = bundle/info.vim
 	url = https://gitlab.com/HiPhish/info.vim.git
+[submodule "bundle/vim-jsx"]
+	path = bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
