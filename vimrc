@@ -148,7 +148,7 @@ autocmd BufReadPost COMMIT_EDITMSG exe "normal! gg"
 
 " {{{ tagbar options
 nnoremap <silent> <F4> :TagbarToggle<CR>
-let g:tagbar_ctags_bin = 'anjuta-tags'
+let g:tagbar_ctags_bin = 'ctags'
 let g:tagbar_left = 1
 let g:tagbar_autoshowtag = 1
 " }}}
