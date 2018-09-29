@@ -299,6 +299,11 @@ elseif executable('ag')
 endif
 " }}}
 
+
+" {{{ JSX
+let g:jsx_ext_required = 0
+" }}}
+
 set tags+=./tags,~/tags,~/.vim/tags
 
 set exrc
