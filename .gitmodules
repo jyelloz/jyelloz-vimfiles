@@ -241,3 +241,6 @@
 [submodule "bundle/emmet-vim"]
 	path = bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
+[submodule "bundle/pest.vim"]
+	path = bundle/pest.vim
+	url = https://github.com/pest-parser/pest.vim.git
