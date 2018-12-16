@@ -244,3 +244,6 @@
 [submodule "bundle/pest.vim"]
 	path = bundle/pest.vim
 	url = https://github.com/pest-parser/pest.vim.git
+[submodule "bundle/vim-nix"]
+	path = bundle/vim-nix
+	url = https://github.com/LnL7/vim-nix.git
