@@ -284,11 +284,11 @@ let g:GPGPreferArmor = 1
 
 " {{{ rg or ag
 if executable('rg')
-  set grepprg=rg\ --vimgrep
-  let g:ackprg = 'ag --nogroup --nocolor --column'
+  let &grepprg = 'rg --vimgrep'
+  let g:ackprg = 'rg --vimgrep --no-heading'
 elseif executable('ag')
   " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
+  let &grepprg = 'ag --nogroup --nocolor'
   let g:ackprg = 'ag --nogroup --nocolor --column'
 
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
