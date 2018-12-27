@@ -247,3 +247,9 @@
 [submodule "bundle/vim-nix"]
 	path = bundle/vim-nix
 	url = https://github.com/LnL7/vim-nix.git
+[submodule "bundle/ncm2"]
+	path = bundle/ncm2
+	url = https://github.com/ncm2/ncm2.git
+[submodule "bundle/nvim-yarp"]
+	path = bundle/nvim-yarp
+	url = https://github.com/roxma/nvim-yarp.git
