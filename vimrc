@@ -7,8 +7,6 @@ let g:snips_author = "Jordan Yelloz"
 let g:snippets_dir = $HOME . "/.vim/snippets"
 " }}}
 
-call pathogen#infect ()
-
 syntax enable
 filetype plugin indent on
 
