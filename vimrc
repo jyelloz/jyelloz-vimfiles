@@ -75,8 +75,6 @@ elseif has ("gui_running")
     "set guifont=Monospace\ 12
     set guifont=Terminus\ 12
     set showbreak=""
-else
-    " set showbreak=\>\ 
 endif
 
 if $COLORTERM == 'gnome-terminal'
@@ -110,15 +108,6 @@ set smartcase
 augroup bitbake
     autocmd BufRead,BufNewFile *.bb setlocal filetype=bitbake
     autocmd BufRead,BufNewFile *.bbclass setlocal filetype=bitbake
-augroup END
-" }}}
-
-" {{{ vala commands
-augroup vala
-    autocmd BufRead,BufNewFile *.vala setlocal filetype=vala
-    autocmd BufRead,BufNewFile *.vapi setlocal filetype=vala nomodifiable readonly noswapfile
-    autocmd BufEnter,FileType *.vala setlocal efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
-    autocmd BufEnter,FileType *.vapi setlocal efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
 augroup END
 " }}}
 
@@ -164,105 +153,6 @@ nnoremap <silent> <F3> :silent NERDTreeFind<CR>
 let NERDTreeIgnore=['\.pyc$', '\.o$']
 
 
-" }}}
-
-" {{{ syntax adjustments
-"Use the C syntax for varnish source files.
-autocmd BufRead,BufNewFile *.vcl setlocal filetype=vcl
-autocmd! Syntax vcl source $VIMRUNTIME/syntax/c.vim
-"Use the JavaScript syntax for JSON data.
-autocmd BufRead,BufNewFile *.json setlocal filetype=json
-autocmd! Syntax json source $VIMRUNTIME/syntax/yaml.vim
-
-" special python files
-autocmd BufRead,BufNewFile fabfile setlocal filetype=python
-autocmd BufRead,BufNewFile *.tac setlocal filetype=python
-autocmd BufRead,BufNewFile wscript* setlocal filetype=python
-
-autocmd BufRead,BufNewFile /boot/grub*/grub.conf setlocal fileencoding=latin1
-autocmd BufRead,BufNewFile *-bugreport.txt setlocal filetype=gdb
-
-autocmd BufRead,BufNewFile *.less setfiletype less
-
-" }}}
-
-" {{{ syntaxcomplete
-" if has ("autocmd") && exists ("+omnifunc")
-    " autocmd Filetype *
-                " \   if &omnifunc == "" |
-                " \       setlocal omnifunc=syntaxcomplete#Complete |
-                " \   endif
-    " autocmd FileType python set omnifunc=pythoncomplete#Complete
-    " autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-    " autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-    " autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-" endif
-    autocmd Syntax handlebars setlocal indentexpr=HtmlIndent() foldmarker=[[[,]]]
-" }}}
-
-" {{{ python-mode
-let g:pymode = 1
-" let g:pymode_debug = 1
-let g:pymode_folding = 0
-let g:pymode_signs = 0
-let g:pymode_motion = 0
-let g:pymode_rope = 1
-let g:pymode_run = 0
-let g:pymode_lint_write = 0
-let g:pymode_lint_signs = 0
-let g:pymode_lint_checker = ['pep8', 'pylint']
-" let g:pymode_lint_ignore = "E221,C0110,C0111,C0103,W0142,W0702,E1101,R0903,R0901,W061,R0201"
-let g:pymode_lint_signs_always_visible = "1"
-
-let g:pymode_rope_autocomplete_map = ""
-let g:pymode_run_key = ""
-let g:pymode_doc_key = ""
-let g:pymode_breakpoint_key = ""
-
-" }}}
-
-" {{{ jedi-vim
-" let g:jedi#auto_initialization = 0
-let g:jedi#use_tabs_not_buffers = 0
-" }}}
-
-" {{{ ropevim
-
-let ropevim_enable_shortcuts  = 0
-let ropevim_vim_completion    = 0
-let ropevim_extended_complete = 1
-let ropevim_guess_project     = 1
-let ropevim_goto_def_newwin   = 1
-" nmap <silent> <leader>gd :RopeGotoDefinition<CR>
-
-" }}}
-
-" {{{ clang_complete
-
-" this is disabled and vim-clang is used now
-let g:clang_complete_loaded = 1
-let g:clang_library_path = '/usr/lib64'
-let g:clang_use_library  = 1
-
-" }}}
-
-" {{{ vim-clang
-
-let g:clang_c_completeopt = 'menuone,preview'
-let g:clang_auto = 0
-let g:clang_check_syntax_auto = 1
-let g:clang_include_sysheaders = 1
-
-" }}}
-
-" {{{ ctrlp
-
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\.pyc$'
-
-" }}}
-
-" {{{ powerline
-let g:Powerline_symbols = 'unicode'
 " }}}
 
 " {{{ airline
