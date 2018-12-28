@@ -175,10 +175,6 @@
 [submodule "bundle/vim-apathy"]
 	path = pack/plugins/start/vim-apathy
 	url = https://github.com/tpope/vim-apathy.git
-[submodule "bundle/LanguageClient-neovim"]
-	path = pack/plugins/start/LanguageClient-neovim
-	url = https://github.com/autozimu/LanguageClient-neovim.git
-	branch = next
 [submodule "bundle/info.vim"]
 	path = pack/plugins/start/info.vim
 	url = https://gitlab.com/HiPhish/info.vim.git
@@ -200,3 +196,9 @@
 [submodule "bundle/nvim-yarp"]
 	path = pack/plugins/start/nvim-yarp
 	url = https://github.com/roxma/nvim-yarp.git
+[submodule "pack/plugins/start/vim-lsp"]
+	path = pack/plugins/start/vim-lsp
+	url = https://github.com/prabirshrestha/vim-lsp.git
+[submodule "pack/plugins/start/ncm2-vim-lsp"]
+	path = pack/plugins/start/ncm2-vim-lsp
+	url = https://github.com/ncm2/ncm2-vim-lsp.git
