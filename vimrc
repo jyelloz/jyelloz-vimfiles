@@ -29,15 +29,6 @@ nnoremap <up> gk
 nmap <silent> <tab> :silent bn<cr>
 nmap <silent> <S-tab> :silent bp<cr>
 
-" control-space completion
-inoremap <Nul> <C-o>
-inoremap <C-@> <C-x><C-o>
-" imap <C-Space> <C-x> <C-o>
-" imap <C-S-Space> <C-p>
-" imap <D-Space> <C-x> <C-o>
-" imap <D-S-Space> <C-p>
-"iunmap <C-x> <C-o>
-"iunmap <C-p>
 " }}}
 
 " set modeline
