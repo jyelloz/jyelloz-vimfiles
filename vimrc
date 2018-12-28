@@ -111,18 +111,6 @@ augroup bitbake
 augroup END
 " }}}
 
-" {{{ lua.vim
-"
-let lua_version = 5
-let lua_subversion = 1
-let g:lua_complete_omni = 1
-
-let g:syntastic_lua_checkers = ['luac', 'luacheck']
-" let g:syntastic_lua_checkers = ['luac']
-let g:syntastic_lua_luacheck_args = '--no-unused-args'
-
-" }}}
-
 " {{{ git
 autocmd BufReadPost COMMIT_EDITMSG exe "normal! gg"
 " }}}
@@ -187,6 +175,52 @@ elseif executable('ag')
 endif
 " }}}
 
+" {{{ ncm2/lsp
+
+let g:ncm2#auto_popup = 0
+let g:lsp_signs_enabled = 0
+
+if executable('rls')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'rls',
+        \ 'cmd': {server_info->['rls']},
+        \ 'whitelist': ['rust'],
+        \ })
+    au FileType rust call ncm2#enable_for_buffer()
+    au FileType rust imap <buffer> <C-X><C-O> <Plug>(ncm2_manual_trigger)
+endif
+
+if executable('clangd')
+   au User lsp_setup call lsp#register_server({
+       \ 'name': 'clangd',
+       \ 'cmd': {server_info->['clangd', "-compile-commands-dir=."]},
+       \ 'whitelist': ['c', 'cpp'],
+       \ })
+   au FileType c,cpp call ncm2#enable_for_buffer()
+   au FileType c,cpp imap <buffer> <C-X><C-O> <Plug>(ncm2_manual_trigger)
+endif
+
+if executable('pyls')
+	au User lsp_setup call lsp#register_server({
+				\ 'name': 'pyls',
+				\ 'cmd': {server_info->['pyls']},
+				\ 'whitelist': ['python'],
+				\ })
+  au FileType python call ncm2#enable_for_buffer()
+  au FileType python imap <buffer> <C-X><C-O> <Plug>(ncm2_manual_trigger)
+endif
+
+if executable('lua-lsp')
+	au User lsp_setup call lsp#register_server({
+				\ 'name': 'lua-lsp',
+				\ 'cmd': {server_info->['lua-lsp']},
+				\ 'whitelist': ['lua'],
+				\ })
+  au FileType lua call ncm2#enable_for_buffer()
+  au FileType lua imap <buffer> <C-X><C-O> <Plug>(ncm2_manual_trigger)
+endif
+
+" }}}
 
 " {{{ JSX
 let g:jsx_ext_required = 0
