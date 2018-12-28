@@ -119,11 +119,6 @@ let g:tagbar_left = 1
 let g:tagbar_autoshowtag = 1
 " }}}
 
-" {{{ NERDCommenter
-let NERDSpaceDelims       = 1
-let NERDRemoveExtraSpaces = 1
-" }}}
-
 " {{{ NERDTree
 
 nnoremap <silent> <F2> :silent NERDTreeToggle<CR>
