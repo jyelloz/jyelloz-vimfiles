@@ -162,6 +162,10 @@ endif
 " }}}
 
 " {{{ ncm2/lsp
+"
+if !has('nvim')
+  packadd vim-hug-neovim-rpc
+endif
 
 let g:ncm2#auto_popup = 0
 let g:lsp_signs_enabled = 0
