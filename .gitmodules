@@ -205,3 +205,6 @@
 [submodule "vim-hug-neovim-rpc"]
 	path = pack/plugins/opt/vim-hug-neovim-rpc
 	url = https://github.com/roxma/vim-hug-neovim-rpc
+[submodule "vinfo"]
+	path = pack/plugins/start/vinfo
+	url = https://github.com/alx741/vinfo.git
