@@ -208,3 +208,6 @@
 [submodule "vinfo"]
 	path = pack/plugins/start/vinfo
 	url = https://github.com/alx741/vinfo.git
+[submodule "vim-plugin-AnsiEsc"]
+	path = pack/plugins/start/vim-plugin-AnsiEsc
+	url = https://github.com/powerman/vim-plugin-AnsiEsc
