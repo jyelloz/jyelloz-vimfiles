@@ -211,3 +211,6 @@
 [submodule "vim-plugin-AnsiEsc"]
 	path = pack/plugins/start/vim-plugin-AnsiEsc
 	url = https://github.com/powerman/vim-plugin-AnsiEsc
+[submodule "vim-lsc"]
+	path = pack/plugins/start/vim-lsc
+	url = https://github.com/natebosch/vim-lsc.git
