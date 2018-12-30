@@ -161,53 +161,27 @@ elseif executable('ag')
 endif
 " }}}
 
-" {{{ ncm2/lsp
+" {{{ LSC
 "
-if !has('nvim')
-  packadd vim-hug-neovim-rpc
-endif
-
-let g:ncm2#auto_popup = 0
-let g:lsp_signs_enabled = 0
+let g:lsc_server_commands = {}
+let g:lsc_enable_diagnostics = 0
+let g:lsc_auto_map = v:true
 
 if executable('rls')
-    au User lsp_setup call lsp#register_server({
-        \ 'name': 'rls',
-        \ 'cmd': {server_info->['rls']},
-        \ 'whitelist': ['rust'],
-        \ })
-    au FileType rust call ncm2#enable_for_buffer()
-    au FileType rust imap <buffer> <C-X><C-O> <Plug>(ncm2_manual_trigger)
+  let g:lsc_server_commands.rust = 'rls'
 endif
 
 if executable('clangd')
-   au User lsp_setup call lsp#register_server({
-       \ 'name': 'clangd',
-       \ 'cmd': {server_info->['clangd', "-compile-commands-dir=."]},
-       \ 'whitelist': ['c', 'cpp'],
-       \ })
-   au FileType c,cpp call ncm2#enable_for_buffer()
-   au FileType c,cpp imap <buffer> <C-X><C-O> <Plug>(ncm2_manual_trigger)
+  let g:lsc_server_commands.c = 'clangd'
+  let g:lsc_server_commands.cpp = 'clangd'
 endif
 
 if executable('pyls')
-	au User lsp_setup call lsp#register_server({
-				\ 'name': 'pyls',
-				\ 'cmd': {server_info->['pyls']},
-				\ 'whitelist': ['python'],
-				\ })
-  au FileType python call ncm2#enable_for_buffer()
-  au FileType python imap <buffer> <C-X><C-O> <Plug>(ncm2_manual_trigger)
+  let g:lsc_server_commands.python = 'pyls'
 endif
 
 if executable('lua-lsp')
-	au User lsp_setup call lsp#register_server({
-				\ 'name': 'lua-lsp',
-				\ 'cmd': {server_info->['lua-lsp']},
-				\ 'whitelist': ['lua'],
-				\ })
-  au FileType lua call ncm2#enable_for_buffer()
-  au FileType lua imap <buffer> <C-X><C-O> <Plug>(ncm2_manual_trigger)
+  let g:lsc_server_commands.lua = 'lua-lsp'
 endif
 
 " }}}

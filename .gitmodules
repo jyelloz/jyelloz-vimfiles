@@ -187,24 +187,9 @@
 [submodule "vim-nix"]
 	path = pack/plugins/start/vim-nix
 	url = https://github.com/LnL7/vim-nix.git
-[submodule "ncm2"]
-	path = pack/plugins/start/ncm2
-	url = https://github.com/ncm2/ncm2.git
-[submodule "nvim-yarp"]
-	path = pack/plugins/start/nvim-yarp
-	url = https://github.com/roxma/nvim-yarp.git
-[submodule "vim-lsp"]
-	path = pack/plugins/start/vim-lsp
-	url = https://github.com/prabirshrestha/vim-lsp.git
-[submodule "ncm2-vim-lsp"]
-	path = pack/plugins/start/ncm2-vim-lsp
-	url = https://github.com/ncm2/ncm2-vim-lsp.git
 [submodule "tcomment"]
 	path = pack/plugins/start/tcomment
 	url = https://github.com/tomtom/tcomment_vim.git
-[submodule "vim-hug-neovim-rpc"]
-	path = pack/plugins/opt/vim-hug-neovim-rpc
-	url = https://github.com/roxma/vim-hug-neovim-rpc
 [submodule "vinfo"]
 	path = pack/plugins/start/vinfo
 	url = https://github.com/alx741/vinfo.git
