@@ -161,6 +161,10 @@ elseif executable('ag')
 endif
 " }}}
 
+""" {{{ fzf/skim
+nmap <silent> <C-p> :Files<CR>
+""" }}}
+
 " {{{ LSC
 "
 let g:lsc_server_commands = {}
