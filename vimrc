@@ -165,6 +165,10 @@ endif
 nmap <silent> <C-p> :Files<CR>
 """ }}}
 
+""" {{{ ALE
+let g:ale_c_build_dir_names = ["build", "obj"]
+""" }}}
+
 " {{{ LSC
 "
 let g:lsc_server_commands = {}
