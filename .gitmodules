@@ -199,3 +199,6 @@
 [submodule "vim-lsc"]
 	path = pack/plugins/start/vim-lsc
 	url = https://github.com/natebosch/vim-lsc.git
+[submodule "Colorizer"]
+	path = pack/plugins/start/Colorizer
+	url = https://github.com/chrisbra/Colorizer.git
