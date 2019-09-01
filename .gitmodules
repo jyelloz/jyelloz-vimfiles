@@ -142,9 +142,6 @@
 [submodule "fzf.vim"]
 	path = pack/plugins/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
-[submodule "ale"]
-	path = pack/plugins/start/ale
-	url = https://github.com/w0rp/ale
 [submodule "vim-unimpaired"]
 	path = pack/plugins/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired
@@ -196,9 +193,18 @@
 [submodule "vim-plugin-AnsiEsc"]
 	path = pack/plugins/start/vim-plugin-AnsiEsc
 	url = https://github.com/powerman/vim-plugin-AnsiEsc
-[submodule "vim-lsc"]
-	path = pack/plugins/start/vim-lsc
-	url = https://github.com/natebosch/vim-lsc.git
 [submodule "Colorizer"]
 	path = pack/plugins/start/Colorizer
 	url = https://github.com/chrisbra/Colorizer.git
+[submodule "pack/plugins/start/vim-monokai-pro"]
+	path = pack/plugins/start/vim-monokai-pro
+	url = https://github.com/phanviet/vim-monokai-pro.git
+[submodule "pack/plugins/start/vim-snazzy"]
+	path = pack/plugins/start/vim-snazzy
+	url = https://github.com/connorholyday/vim-snazzy.git
+[submodule "pack/plugins/start/sourcerer"]
+	path = pack/plugins/start/sourcerer
+	url = https://github.com/xero/sourcerer.git
+[submodule "pack/plugins/start/coc.nvim"]
+	path = pack/plugins/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git
