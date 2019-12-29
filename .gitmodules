@@ -208,6 +208,7 @@
 [submodule "pack/plugins/start/coc.nvim"]
 	path = pack/plugins/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
+	branch = release
 [submodule "pack/plugins/start/rust.vim"]
 	path = pack/plugins/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim
