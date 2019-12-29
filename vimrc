@@ -52,6 +52,7 @@ set ruler
 set laststatus=2
 set cursorline
 set showcmd
+set number
 set virtualedit=all
 set bs=indent,eol,start
 set linebreak
@@ -62,7 +63,6 @@ if has ("gui_macvim")
     set fuoptions=maxhorz,maxvert
     set number
 elseif has ("gui_running")
-    set number
     "set guifont=Monospace\ 12
     set guifont=Terminus\ 12
     set showbreak=""
@@ -169,29 +169,10 @@ nmap <silent> <C-p> :Files<CR>
 let g:ale_c_build_dir_names = ["build", "obj"]
 """ }}}
 
-" {{{ LSC
-"
-let g:lsc_server_commands = {}
-let g:lsc_enable_diagnostics = 0
-let g:lsc_auto_map = v:true
-
-if executable('rls')
-  let g:lsc_server_commands.rust = 'rls'
-endif
-
-if executable('clangd')
-  let g:lsc_server_commands.c = 'clangd'
-  let g:lsc_server_commands.cpp = 'clangd'
-endif
-
-if executable('pyls')
-  let g:lsc_server_commands.python = 'pyls'
-endif
-
-if executable('lua-lsp')
-  let g:lsc_server_commands.lua = 'lua-lsp'
-endif
-
+" {{{ CoC
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> <C-]> <Plug>(coc-definition)
+nnoremap <silent> K :call CocActionAsync('doHover')<cr>
 " }}}
 
 " {{{ JSX
