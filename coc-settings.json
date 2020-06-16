@@ -1,22 +1,5 @@
 {
-  "rust.cfg_test": true,
-  "languageserver": {
-    "ccls": {
-      "command": "ccls",
-      "filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
-      "rootPatterns": [
-        ".ccls",
-        "compile_commands.json",
-        "build/compile_commands.json",
-        ".vim/",
-        ".git/",
-        ".hg/"
-      ],
-      "initializationOptions": {
-         "cache": {
-           "directory": ".ccls-cache"
-         }
-       }
-    }
-  }
+  "rust-analyzer.serverPath": "~/.cargo/bin/rust-analyzer",
+  "rust-analyzer.completion.addCallArgumentSnippets": true,
+  "clangd.semanticHighlighting": true
 }
