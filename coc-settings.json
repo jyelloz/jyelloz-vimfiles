@@ -1,5 +1,5 @@
 {
-  "rust-analyzer.serverPath": "~/.cargo/bin/rust-analyzer",
+  "rust-analyzer.serverPath": "rust-analyzer",
   "rust-analyzer.completion.addCallArgumentSnippets": true,
   "clangd.semanticHighlighting": true
 }
