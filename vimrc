@@ -121,6 +121,7 @@ let g:tagbar_autoshowtag = 1
 
 " {{{ fern.vim
 let g:fern#renderer = "nerdfont"
+autocmd FileType fern setlocal nonumber
 " }}}
 
 
