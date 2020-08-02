@@ -2,6 +2,8 @@ set nocompatible
 set hidden
 set noswapfile
 
+set mouse=nvr
+
 " {{{ snipMate options
 let g:snips_author = "Jordan Yelloz"
 let g:snippets_dir = $HOME . "/.vim/snippets"
