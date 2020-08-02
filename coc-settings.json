@@ -1,5 +1,6 @@
 {
   "rust-analyzer.serverPath": "rust-analyzer",
   "rust-analyzer.completion.addCallArgumentSnippets": true,
+  "rust-analyzer.cargo.loadOutDirsFromCheck": true,
   "clangd.semanticHighlighting": true
 }
