@@ -59,26 +59,22 @@ set virtualedit=all
 set bs=indent,eol,start
 set linebreak
 
-if has ("gui_macvim")
-    set guifont=Terminus:h20
-    set noantialias
-    set fuoptions=maxhorz,maxvert
-    set number
-elseif has ("gui_running")
-    "set guifont=Monospace\ 12
-    set guifont=Terminus\ 12
-    set showbreak=""
+if has ("gui_running")
+  let &guifont = 'IBM Plex Mono Light 12'
+  set showbreak=""
 endif
 
 if $COLORTERM == 'gnome-terminal'
-    set t_Co=256
+  set t_Co=256
 elseif strlen($VTE_VERSION) > 0
-    set t_Co=256
+  set t_Co=256
 endif
 
-set background=dark
-let g:molokai_original = 0
-colorscheme molokai
+set termguicolors
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
 
 set showmatch
 highlight WhitespaceEOL ctermbg=red guibg=red
