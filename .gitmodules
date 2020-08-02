@@ -224,3 +224,12 @@
 [submodule "pack/plugins/start/base16-vim"]
 	path = pack/plugins/start/base16-vim
 	url = https://github.com/chriskempson/base16-vim.git
+[submodule "pack/plugins/start/fern.vim"]
+	path = pack/plugins/start/fern.vim
+	url = https://github.com/lambdalisue/fern.vim
+[submodule "pack/plugins/start/fern-renderer-nerdfont.vim"]
+	path = pack/plugins/start/fern-renderer-nerdfont.vim
+	url = https://github.com/lambdalisue/fern-renderer-nerdfont.vim
+[submodule "pack/plugins/start/nerdfont.vim"]
+	path = pack/plugins/start/nerdfont.vim
+	url = https://github.com/lambdalisue/nerdfont.vim

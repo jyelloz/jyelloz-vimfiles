@@ -119,6 +119,10 @@ let g:tagbar_left = 1
 let g:tagbar_autoshowtag = 1
 " }}}
 
+" {{{ fern.vim
+let g:fern#renderer = "nerdfont"
+" }}}
+
 " {{{ NERDTree
 
 nnoremap <silent> <F2> :silent NERDTreeToggle<CR>
