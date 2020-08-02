@@ -123,15 +123,6 @@ let g:tagbar_autoshowtag = 1
 let g:fern#renderer = "nerdfont"
 " }}}
 
-" {{{ NERDTree
-
-nnoremap <silent> <F2> :silent NERDTreeToggle<CR>
-nnoremap <silent> <F3> :silent NERDTreeFind<CR>
-
-let NERDTreeIgnore=['\.pyc$', '\.o$']
-
-
-" }}}
 
 " {{{ gnupg
 
