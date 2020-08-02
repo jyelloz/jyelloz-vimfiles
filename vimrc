@@ -167,6 +167,7 @@ endif
 
 """ {{{ fzf/skim
 nmap <silent> <C-p> :Files<CR>
+nmap <silent> ;     :Buffers<CR>
 """ }}}
 
 """ {{{ ALE
