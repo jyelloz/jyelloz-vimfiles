@@ -152,10 +152,6 @@ nmap <silent> <C-p> :Files<CR>
 nmap <silent> ;     :Buffers<CR>
 """ }}}
 
-""" {{{ ALE
-let g:ale_c_build_dir_names = ["build", "obj"]
-""" }}}
-
 " {{{ CoC
 " Use `[g` and `]g` to navigate diagnostics
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
