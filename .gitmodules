@@ -70,9 +70,6 @@
 [submodule "vim-tbone"]
 	path = pack/plugins/start/vim-tbone
 	url = https://github.com/tpope/vim-tbone.git
-[submodule "airline"]
-	path = pack/plugins/start/airline
-	url = https://github.com/bling/vim-airline.git
 [submodule "bufferline"]
 	path = bundle/bufferline
 	url = https://github.com/bling/vim-bufferline.git
@@ -130,9 +127,6 @@
 [submodule "vim-elixir"]
 	path = pack/plugins/start/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
-[submodule "airline-themes"]
-	path = pack/plugins/start/airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes.git
 [submodule "gitolite.vim"]
 	path = pack/plugins/start/vim-gitolite
 	url = https://github.com/tmatilai/gitolite.vim.git
