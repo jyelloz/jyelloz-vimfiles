@@ -104,12 +104,6 @@ augroup END
 autocmd BufReadPost COMMIT_EDITMSG exe "normal! gg"
 " }}}
 
-" {{{ Taglist options
-" let Tlist_File_Fold_Auto_Close = 1
-" let Tlist_Ctags_Cmd = 'anjuta-tags'
-" let tlist_vala_settings='c#;g:enum;s:struct;i:interface;c:class;m:method'
-" }}}
-
 " {{{ tagbar options
 nnoremap <silent> <F4> :TagbarToggle<CR>
 let g:tagbar_ctags_bin = 'ctags'
