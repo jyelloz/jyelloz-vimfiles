@@ -233,3 +233,6 @@
 [submodule "pack/plugins/start/vim-devicons"]
 	path = pack/plugins/start/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons
+[submodule "pack/plugins/start/vim-buffet"]
+	path = pack/plugins/start/vim-buffet
+	url = https://github.com/bagrat/vim-buffet
