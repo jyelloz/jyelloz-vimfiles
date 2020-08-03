@@ -113,6 +113,22 @@ let g:fern#renderer = "nerdfont"
 autocmd FileType fern setlocal nonumber
 " }}}
 
+" {{{ lightline
+  let g:lightline = {
+    \ 'component_function': {
+    \   'filetype': 'DevIconsLightLineFiletype',
+    \   'fileformat': 'DevIconsLightLineFileformat',
+    \ }
+  \ }
+
+  function! DevIconsLightLineFiletype()
+    return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+  endfunction
+
+  function! DevIconsLightLineFileformat()
+    return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+  endfunction
+" }}}
 
 " {{{ gnupg
 
