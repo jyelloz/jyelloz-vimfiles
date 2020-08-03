@@ -18,9 +18,6 @@ let mapleader = ","
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
-" nnoremap <silent> <F3> :silent NERDTreeClose<CR>:TlistToggle<CR>
-" nnoremap <silent> <F2> :silent TlistClose<CR>:NERDTreeToggle<CR>
-
 " easier up-down behavior
 nnoremap j gj
 nnoremap k gk
