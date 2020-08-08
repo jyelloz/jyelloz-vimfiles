@@ -109,6 +109,7 @@ let g:tagbar_autoshowtag = 1
 " }}}
 
 " {{{ fern.vim
+nnoremap <silent> <F3> :Fern . -reveal=% -drawer -toggle -stay<CR>
 let g:fern#renderer = "nerdfont"
 autocmd FileType fern setlocal nonumber
 " }}}
