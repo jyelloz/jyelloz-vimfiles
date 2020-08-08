@@ -162,10 +162,10 @@ elseif executable('ag')
 endif
 " }}}
 
-""" {{{ fzf/skim
+" {{{ fzf/skim
 nmap <silent> <C-p> :Files<CR>
 nmap <silent> ;     :Buffers<CR>
-""" }}}
+" }}}
 
 " {{{ CoC
 " Use `[g` and `]g` to navigate diagnostics
