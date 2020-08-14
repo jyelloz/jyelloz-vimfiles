@@ -67,6 +67,10 @@ elseif strlen($VTE_VERSION) > 0
   set t_Co=256
 endif
 
+if !has("nvim")
+  let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
+  let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
+endif
 set termguicolors
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
