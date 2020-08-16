@@ -193,10 +193,19 @@ function! s:show_documentation()
   endif
 endfunction
 
+if exists("&tagfunc")
+  set tagfunc=CocTagFunc
+endif
+
 " }}}
 
 " {{{ JSX
 let g:jsx_ext_required = 0
+" }}}
+
+" {{{ Markdown
+let g:vim_markdown_folding_disabled = 1
+autocmd FileType markdown setlocal conceallevel=2
 " }}}
 
 set tags+=./tags,~/tags,~/.vim/tags
