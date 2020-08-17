@@ -236,3 +236,9 @@
 [submodule "pack/plugins/start/vim-buffet"]
 	path = pack/plugins/start/vim-buffet
 	url = https://github.com/bagrat/vim-buffet
+[submodule "pack/plugins/start/vim-sleuth"]
+	path = pack/plugins/start/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth
+[submodule "pack/plugins/start/fern-mapping-project-top.vim"]
+	path = pack/plugins/start/fern-mapping-project-top.vim
+	url = https://github.com/lambdalisue/fern-mapping-project-top.vim.git
