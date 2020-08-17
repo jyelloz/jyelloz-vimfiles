@@ -120,9 +120,16 @@ autocmd FileType fern setlocal nonumber
 
 " {{{ lightline
   let g:lightline = {
+    \ 'active': {
+    \   'left': [
+    \     [ 'mode', 'paste' ],
+    \     [ 'gitbranch', 'readonly', 'filename', 'modified' ],
+    \   ],
+    \ },
     \ 'component_function': {
     \   'filetype': 'DevIconsLightLineFiletype',
     \   'fileformat': 'DevIconsLightLineFileformat',
+    \   'gitbranch': 'FugitiveHead',
     \ }
   \ }
 
