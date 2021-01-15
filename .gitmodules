@@ -242,3 +242,6 @@
 [submodule "pack/plugins/start/fern-mapping-project-top.vim"]
 	path = pack/plugins/start/fern-mapping-project-top.vim
 	url = https://github.com/lambdalisue/fern-mapping-project-top.vim.git
+[submodule "pack/plugins/start/todo.txt-vim"]
+	path = pack/plugins/start/todo.txt-vim
+	url = https://github.com/freitass/todo.txt-vim.git
