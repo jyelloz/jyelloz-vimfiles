@@ -219,6 +219,30 @@ EOF
 
 " }}}
 
+" {{{ tree-sitter
+
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  -- Modules and its options go here
+  highlight = { enable = true },
+  incremental_selection = { enable = true },
+  indent = { enable = true },
+  textobjects = { enable = true },
+}
+EOF
+
+" }}}
+
+" {{{ Trouble
+lua << EOF
+require'nvim-web-devicons'.setup {
+  default = true;
+}
+require("trouble").setup {
+}
+EOF
+" }}}
+
 " {{{ Telescope
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
