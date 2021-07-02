@@ -97,9 +97,6 @@
 [submodule "html5.vim"]
 	path = pack/plugins/start/html5.vim
 	url = https://github.com/othree/html5.vim.git
-[submodule "vim-ansible-yaml"]
-	path = pack/plugins/start/vim-ansible-yaml
-	url = https://github.com/chase/vim-ansible-yaml.git
 [submodule "editorconfig"]
 	path = pack/plugins/start/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim.git
@@ -203,27 +200,15 @@
 [submodule "pack/plugins/start/tagbar"]
 	path = pack/plugins/start/tagbar
 	url = https://github.com/majutsushi/tagbar.git
-[submodule "pack/plugins/start/skim.vim"]
-	path = pack/plugins/start/skim.vim
-	url = https://github.com/lotabout/skim.vim.git
 [submodule "pack/plugins/start/tabular"]
 	path = pack/plugins/start/tabular
 	url = https://github.com/godlygeek/tabular.git
 [submodule "pack/plugins/start/vim-markdown"]
 	path = pack/plugins/start/vim-markdown
 	url = https://github.com/tpope/vim-markdown
-[submodule "pack/plugins/start/vim-lsp-cxx-highlight"]
-	path = pack/plugins/start/vim-lsp-cxx-highlight
-	url = https://github.com/jackguo380/vim-lsp-cxx-highlight.git
 [submodule "pack/plugins/start/base16-vim"]
 	path = pack/plugins/start/base16-vim
 	url = https://github.com/chriskempson/base16-vim.git
-[submodule "pack/plugins/start/fern.vim"]
-	path = pack/plugins/start/fern.vim
-	url = https://github.com/lambdalisue/fern.vim
-[submodule "pack/plugins/start/fern-renderer-nerdfont.vim"]
-	path = pack/plugins/start/fern-renderer-nerdfont.vim
-	url = https://github.com/lambdalisue/fern-renderer-nerdfont.vim
 [submodule "pack/plugins/start/nerdfont.vim"]
 	path = pack/plugins/start/nerdfont.vim
 	url = https://github.com/lambdalisue/nerdfont.vim
@@ -239,9 +224,21 @@
 [submodule "pack/plugins/start/vim-sleuth"]
 	path = pack/plugins/start/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth
-[submodule "pack/plugins/start/fern-mapping-project-top.vim"]
-	path = pack/plugins/start/fern-mapping-project-top.vim
-	url = https://github.com/lambdalisue/fern-mapping-project-top.vim.git
 [submodule "pack/plugins/start/todo.txt-vim"]
 	path = pack/plugins/start/todo.txt-vim
 	url = https://github.com/freitass/todo.txt-vim.git
+[submodule "pack/plugins/start/nvim-lspconfig"]
+	path = pack/plugins/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
+[submodule "pack/plugins/start/telescope.nvim"]
+	path = pack/plugins/start/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim.git
+[submodule "pack/plugins/start/plenary.nvim"]
+	path = pack/plugins/start/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim.git
+[submodule "pack/plugins/start/popup.nvim"]
+	path = pack/plugins/start/popup.nvim
+	url = https://github.com/nvim-lua/popup.nvim.git
+[submodule "pack/plugins/start/nvim-treesitter"]
+	path = pack/plugins/start/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter.git
