@@ -248,3 +248,6 @@
 [submodule "pack/plugins/start/nvim-web-devicons"]
 	path = pack/plugins/start/nvim-web-devicons
 	url = https://github.com/kyazdani42/nvim-web-devicons.git
+[submodule "pack/plugins/start/rust-tools.nvim"]
+	path = pack/plugins/start/rust-tools.nvim
+	url = https://github.com/simrat39/rust-tools.nvim
