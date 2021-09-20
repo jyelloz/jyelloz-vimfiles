@@ -4,11 +4,6 @@ set noswapfile
 
 set mouse=nvr
 
-" {{{ snipMate options
-let g:snips_author = "Jordan Yelloz"
-let g:snippets_dir = $HOME . "/.vim/snippets"
-" }}}
-
 syntax enable
 filetype plugin indent on
 
