@@ -251,3 +251,6 @@
 [submodule "pack/plugins/start/rust-tools.nvim"]
 	path = pack/plugins/start/rust-tools.nvim
 	url = https://github.com/simrat39/rust-tools.nvim
+[submodule "pack/plugins/start/nvim-dap"]
+	path = pack/plugins/start/nvim-dap
+	url = https://github.com/mfussenegger/nvim-dap.git
