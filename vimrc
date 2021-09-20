@@ -92,6 +92,11 @@ set ignorecase
 set smartcase
 " }}}
 
+" {{{ netrw options
+let g:netrw_banner = 0
+let g:netrw_browsex_viewer = "xdg-open"
+" }}}
+
 " {{{ bitbake commands
 augroup bitbake
     autocmd BufRead,BufNewFile *.bb setlocal filetype=bitbake
