@@ -84,6 +84,9 @@ match WhitespaceEOL /\s\+$/
 set wildmode=list:longest
 set wildignore=*.swp,*.bak.*.pyc,*.class,*.o
 set wildmenu
+
+autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+
 " }}}
 
 " {{{ search options
