@@ -147,20 +147,8 @@ let g:GPGPreferArmor = 1
 " }}}
 
 " {{{ rg or ag
-if executable('rg')
-  let &grepprg = 'rg --vimgrep'
-  let g:ackprg = 'rg --vimgrep --no-heading'
-elseif executable('ag')
-  " Use ag over grep
-  let &grepprg = 'ag --nogroup --nocolor'
-  let g:ackprg = 'ag --nogroup --nocolor --column'
-
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
-  " ag is fast enough that CtrlP doesn't need to cache
-  let g:ctrlp_use_caching = 0
-endif
+let &grepprg = 'rg --vimgrep'
+let g:ackprg = 'rg --vimgrep --no-heading'
 " }}}
 
 " {{{ LSP
