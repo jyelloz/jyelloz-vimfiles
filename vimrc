@@ -234,6 +234,37 @@ EOF
 
 " }}}
 
+" {{{ DAP
+lua << EOF
+local dap = require('dap')
+dap.adapters.lldb = {
+  type = 'executable',
+  command = 'lldb-vscode', -- adjust as needed
+  name = "lldb"
+}
+dap.configurations.c = {
+  {
+    name = "Launch",
+    type = "lldb",
+    request = "launch",
+    program = function()
+      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+    end,
+    cwd = '${workspaceFolder}',
+    stopOnEntry = false,
+    args = {},
+    runInTerminal = false,
+  },
+}
+EOF
+
+lua << EOF
+local dapui = require('dapui')
+dapui.setup({})
+EOF
+
+" }}}
+
 " {{{ tree-sitter
 
 lua <<EOF
