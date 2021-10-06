@@ -121,9 +121,6 @@
 [submodule "color_coded"]
 	path = bundle/color_coded
 	url = https://github.com/jeaye/color_coded.git
-[submodule "vim-elixir"]
-	path = pack/plugins/start/vim-elixir
-	url = https://github.com/elixir-lang/vim-elixir.git
 [submodule "gitolite.vim"]
 	path = pack/plugins/start/vim-gitolite
 	url = https://github.com/tmatilai/gitolite.vim.git
