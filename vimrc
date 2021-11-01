@@ -214,19 +214,33 @@ nvim_lsp['sumneko_lua'].setup {
 
 do
   local opts = {
-      tools = {
-          autoSetHints = true,
-          hover_with_actions = true,
-          runnables = {
-              use_telescope = true
-          },
+    tools = {
+      autoSetHints = true,
+      hover_with_actions = true,
+      runnables = {
+        use_telescope = true
       },
       inlay_hints = {
-        parameter_hints_prefix = " : ",
+          parameter_hints_prefix = " ",
+          other_hints_prefix = ": ",
       },
-      server = {
-          on_attach = on_attach,
+    },
+    server = {
+      on_attach = on_attach,
+      settings = {
+        ['rust-analyzer'] = {
+          diagnostics = {
+            disabled = {
+              -- For RTIC which generates non-standard variable names.
+              'incorrect-ident-case',
+              -- For RTIC which uses a macro that rust-analyzer can't find.
+              'unresolved-proc-macro',
+              'unresolved-macro-call',
+            },
+          },
+        },
       },
+    },
   }
   require('rust-tools').setup(opts)
 end
