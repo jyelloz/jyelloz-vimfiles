@@ -51,11 +51,6 @@ set virtualedit=all
 set bs=indent,eol,start
 set linebreak
 
-if has ("gui_running")
-  let &guifont = 'IBM Plex Mono Light 12'
-  set showbreak=""
-endif
-
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256
 elseif strlen($VTE_VERSION) > 0
