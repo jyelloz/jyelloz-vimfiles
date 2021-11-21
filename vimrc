@@ -4,7 +4,9 @@ set noswapfile
 
 set mouse=nvr
 
-syntax enable
+if !has("nvim")
+  syntax enable
+endif
 filetype plugin indent on
 
 " {{{ key bindings
