@@ -254,3 +254,6 @@
 [submodule "pack/plugins/start/nvim-dap-ui"]
 	path = pack/plugins/start/nvim-dap-ui
 	url = https://github.com/rcarriga/nvim-dap-ui.git
+[submodule "pack/plugins/start/mediawiki.vim"]
+	path = pack/plugins/start/mediawiki.vim
+	url = https://github.com/chikamichi/mediawiki.vim.git
