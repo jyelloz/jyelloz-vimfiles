@@ -200,6 +200,9 @@ do
   for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
       on_attach = on_attach,
+      flags = {
+        debounce_text_changes = 150,
+      },
     }
   end
 end
@@ -253,7 +256,7 @@ dap.adapters.lldb = {
   command = 'lldb-vscode', -- adjust as needed
   name = "lldb"
 }
-dap.configurations.c = {
+local cconf = {
   {
     name = "Launch",
     type = "lldb",
@@ -267,11 +270,27 @@ dap.configurations.c = {
     runInTerminal = false,
   },
 }
+dap.configurations.c = cconf
+dap.configurations.cpp = cconf
+dap.configurations.rust = cconf
 EOF
 
 lua << EOF
+local dap = require('dap')
 local dapui = require('dapui')
 dapui.setup({})
+local dapvirtual = require('nvim-dap-virtual-text')
+dapvirtual.setup()
+
+dap.listeners.after.event_initialized['dapui_config'] = function()
+  dapui.open()
+end
+dap.listeners.before.event_terminated['dapui_config'] = function()
+  dapui.close()
+end
+dap.listeners.before.event_exited['dapui_config'] = function()
+  dapui.close()
+end
 EOF
 
 " }}}
