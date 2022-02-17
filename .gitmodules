@@ -260,3 +260,9 @@
 [submodule "pack/plugins/start/vim-uci"]
 	path = pack/plugins/start/vim-uci
 	url = https://github.com/cmcaine/vim-uci.git
+[submodule "pack/plugins/start/nvim-dap-virtual-text"]
+	path = pack/plugins/start/nvim-dap-virtual-text
+	url = https://github.com/theHamsta/nvim-dap-virtual-text.git
+[submodule "pack/plugins/start/telescope-dap.nvim"]
+	path = pack/plugins/start/telescope-dap.nvim
+	url = https://github.com/nvim-telescope/telescope-dap.nvim
