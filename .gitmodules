@@ -142,9 +142,6 @@
 [submodule "vim-toml-enhance"]
 	path = pack/plugins/start/vim-toml-enhance
 	url = https://github.com/maralla/vim-toml-enhance.git
-[submodule "vim-projectionist"]
-	path = pack/plugins/start/vim-projectionist
-	url = https://github.com/tpope/vim-projectionist.git
 [submodule "vim-dotenv"]
 	path = pack/plugins/start/vim-dotenv
 	url = https://github.com/tpope/vim-dotenv.git
