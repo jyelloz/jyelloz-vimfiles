@@ -214,17 +214,6 @@ nvim_lsp['sumneko_lua'].setup {
 
 do
   local opts = {
-    tools = {
-      autoSetHints = true,
-      hover_with_actions = true,
-      runnables = {
-        use_telescope = true
-      },
-      inlay_hints = {
-          parameter_hints_prefix = " ",
-          other_hints_prefix = ": ",
-      },
-    },
     server = {
       on_attach = on_attach,
       settings = {
