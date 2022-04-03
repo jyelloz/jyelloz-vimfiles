@@ -154,6 +154,7 @@ lua << EOF
 -- local rust_tools = require'rust-tools'
 --rust_tools.setup({})
 local nvim_lsp = require('lspconfig')
+local exp = vim.fn.expand
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -208,7 +209,12 @@ do
 end
 
 nvim_lsp['sumneko_lua'].setup {
-  cmd = { '/home/joe/Projects/lua-language-server/lua-language-server' },
+  cmd = { exp'~/Projects/lua-language-server/bin/lua-language-server' },
+  settings = {
+    Lua = {
+      telemetry = { enable = false },
+    },
+  },
   on_attach = on_attach,
 }
 
