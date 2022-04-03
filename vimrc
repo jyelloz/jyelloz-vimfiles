@@ -218,6 +218,12 @@ nvim_lsp['sumneko_lua'].setup {
   on_attach = on_attach,
 }
 
+nvim_lsp.csharp_ls.setup {
+  cmd = { exp'~/.dotnet/tools/csharp-ls' },
+  cmd_env = { DOTNET_ROOT = '/opt/dotnet-sdk-bin-6.0' },
+  on_attach = on_attach,
+}
+
 do
   local opts = {
     server = {
