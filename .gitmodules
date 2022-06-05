@@ -263,3 +263,6 @@
 [submodule "pack/plugins/start/telescope-dap.nvim"]
 	path = pack/plugins/start/telescope-dap.nvim
 	url = https://github.com/nvim-telescope/telescope-dap.nvim
+[submodule "pack/plugins/start/vim-syntax-clingo"]
+	path = pack/plugins/start/vim-syntax-clingo
+	url = https://github.com/rkaminsk/vim-syntax-clingo.git
