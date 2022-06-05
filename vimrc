@@ -372,6 +372,10 @@ let g:vim_markdown_folding_disabled = 1
 autocmd FileType markdown setlocal conceallevel=2
 " }}}
 
+" {{{ clingo/gringo
+autocmd FileType gringo setlocal commentstring=%%\ %s
+" }}}
+
 set tags+=./tags,~/tags,~/.vim/tags
 
 set exrc
