@@ -300,6 +300,35 @@ EOF
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
+
+  ensure_installed = {
+    "c",
+    "c_sharp",
+    "comment",
+    "cpp",
+    "devicetree",
+    "dot",
+    "html",
+    "http",
+    "java",
+    "json",
+    "kotlin",
+    "llvm",
+    "lua",
+    "make",
+    "markdown",
+    "ninja",
+    "python",
+    "regex",
+    "rst",
+    "rust",
+    "teal",
+    "todotxt",
+    "toml",
+    "vim",
+    "yaml",
+  },
+
   -- Modules and its options go here
   highlight = { enable = true },
   incremental_selection = { enable = true },
