@@ -35,6 +35,7 @@ set textwidth=79
 set formatoptions=tcv
 set joinspaces
 set cinoptions='(0,W4,m1'
+let c_syntax_for_h = 1
 
 " {{{ tab behavior
 set sts=4
