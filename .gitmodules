@@ -43,9 +43,6 @@
 [submodule "closetag"]
 	path = pack/plugins/start/closetag
 	url = https://github.com/docunext/closetag.vim.git
-[submodule "vim-colors-solarized"]
-	path = pack/plugins/start/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "vim-bitbake"]
 	path = pack/plugins/start/vim-bitbake
 	url = https://github.com/kergoth/vim-bitbake.git
