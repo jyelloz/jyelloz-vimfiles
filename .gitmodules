@@ -197,9 +197,6 @@
 [submodule "pack/plugins/start/vim-markdown"]
 	path = pack/plugins/start/vim-markdown
 	url = https://github.com/tpope/vim-markdown
-[submodule "pack/plugins/start/base16-vim"]
-	path = pack/plugins/start/base16-vim
-	url = https://github.com/chriskempson/base16-vim.git
 [submodule "pack/plugins/start/nerdfont.vim"]
 	path = pack/plugins/start/nerdfont.vim
 	url = https://github.com/lambdalisue/nerdfont.vim
@@ -266,3 +263,6 @@
 [submodule "pack/plugins/start/vim-syntax-clingo"]
 	path = pack/plugins/start/vim-syntax-clingo
 	url = https://github.com/rkaminsk/vim-syntax-clingo.git
+[submodule "pack/plugins/start/nvim-base16"]
+	path = pack/plugins/start/nvim-base16
+	url = https://github.com/RRethy/nvim-base16.git
