@@ -263,3 +263,6 @@
 [submodule "pack/plugins/start/base16-vim"]
 	path = pack/plugins/start/base16-vim
 	url = https://github.com/base16-project/base16-vim.git
+[submodule "pack/plugins/start/clangd_extensions.nvim"]
+	path = pack/plugins/start/clangd_extensions.nvim
+	url = https://github.com/p00f/clangd_extensions.nvim.git
