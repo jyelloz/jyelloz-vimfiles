@@ -65,9 +65,11 @@ if !has("nvim")
   let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
 endif
 set termguicolors
+let base16colorspace=256
 if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
   source ~/.vimrc_background
+else
+  colorscheme base16-tomorrow-night-eighties
 endif
 
 set showmatch
