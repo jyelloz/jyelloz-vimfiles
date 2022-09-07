@@ -199,7 +199,6 @@ do
   local servers = {
     'pyright',
     'tsserver',
-    'clangd',
   }
   for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
@@ -226,6 +225,15 @@ nvim_lsp.csharp_ls.setup {
   cmd_env = { DOTNET_ROOT = '/opt/dotnet-sdk-bin-6.0' },
   on_attach = on_attach,
 }
+
+do
+  local opts = {
+    server = {
+      on_attach = on_attach,
+    },
+  }
+  require('clangd_extensions').setup(opts)
+end
 
 do
   local opts = {
