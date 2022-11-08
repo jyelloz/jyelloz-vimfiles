@@ -266,3 +266,6 @@
 [submodule "pack/plugins/start/clangd_extensions.nvim"]
 	path = pack/plugins/start/clangd_extensions.nvim
 	url = https://github.com/p00f/clangd_extensions.nvim.git
+[submodule "pack/plugins/start/bpftrace.vim"]
+	path = pack/plugins/start/bpftrace.vim
+	url = https://github.com/mmarchini/bpftrace.vim.git
