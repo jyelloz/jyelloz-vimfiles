@@ -345,7 +345,10 @@ require'nvim-treesitter.configs'.setup {
   incremental_selection = { enable = true },
   indent = {
     enable = true,
-    disable = {"rust"},
+    disable = {
+      'rust',
+      'python',
+    },
   },
   textobjects = { enable = true },
 }
