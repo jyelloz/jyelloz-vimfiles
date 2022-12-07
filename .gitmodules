@@ -145,9 +145,6 @@
 [submodule "vim-jsx"]
 	path = pack/plugins/start/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
-[submodule "pest.vim"]
-	path = pack/plugins/start/pest.vim
-	url = https://github.com/pest-parser/pest.vim.git
 [submodule "tcomment"]
 	path = pack/plugins/start/tcomment
 	url = https://github.com/tomtom/tcomment_vim.git
