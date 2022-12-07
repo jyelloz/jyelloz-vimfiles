@@ -148,9 +148,6 @@
 [submodule "pest.vim"]
 	path = pack/plugins/start/pest.vim
 	url = https://github.com/pest-parser/pest.vim.git
-[submodule "vim-nix"]
-	path = pack/plugins/start/vim-nix
-	url = https://github.com/LnL7/vim-nix.git
 [submodule "tcomment"]
 	path = pack/plugins/start/tcomment
 	url = https://github.com/tomtom/tcomment_vim.git
@@ -260,3 +257,6 @@
 [submodule "pack/plugins/start/bpftrace.vim"]
 	path = pack/plugins/start/bpftrace.vim
 	url = https://github.com/mmarchini/bpftrace.vim.git
+[submodule "pack/plugins/start/vimwiki"]
+	path = pack/plugins/start/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git
