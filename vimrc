@@ -390,6 +390,15 @@ autocmd FileType markdown setlocal conceallevel=2
 autocmd FileType gringo setlocal commentstring=%%\ %s
 " }}}
 
+" {{{ vimwiki
+let g:vimwiki_global_ext = 0
+let g:vimwiki_list = [{
+      \ 'path': '~/Documents/vimwiki/',
+      \ 'syntax': 'markdown',
+      \ 'ext': '.md',
+      \}]
+" }}}
+
 set tags+=./tags,~/tags,~/.vim/tags
 
 set exrc
