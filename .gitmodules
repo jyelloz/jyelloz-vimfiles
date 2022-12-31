@@ -254,3 +254,6 @@
 [submodule "pack/plugins/start/vimwiki"]
 	path = pack/plugins/start/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
+[submodule "pack/plugins/start/gitsigns.nvim"]
+	path = pack/plugins/start/gitsigns.nvim
+	url = https://github.com/lewis6991/gitsigns.nvim.git
