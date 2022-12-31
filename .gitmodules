@@ -43,9 +43,6 @@
 [submodule "vim-bitbake"]
 	path = pack/plugins/start/vim-bitbake
 	url = https://github.com/kergoth/vim-bitbake.git
-[submodule "vim-gitgutter"]
-	path = pack/plugins/start/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter.git
 [submodule "vim-git"]
 	path = pack/plugins/start/vim-git
 	url = https://github.com/tpope/vim-git.git
