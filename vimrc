@@ -258,7 +258,7 @@ do
   end
 end
 
-nvim_lsp['sumneko_lua'].setup {
+nvim_lsp['lua_ls'].setup {
   cmd = { exp'~/Projects/lua-language-server/bin/lua-language-server' },
   settings = {
     Lua = {
