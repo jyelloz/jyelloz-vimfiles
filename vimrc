@@ -298,6 +298,10 @@ do
               'unresolved-macro-call',
             },
           },
+          check = {
+            command = "clippy",
+            extraArgs = { "--all", "--", "-W", "clippy::all" },
+          },
         },
       },
     },
