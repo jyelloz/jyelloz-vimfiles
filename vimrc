@@ -259,7 +259,7 @@ do
 end
 
 nvim_lsp['lua_ls'].setup {
-  cmd = { exp'~/Projects/lua-language-server/bin/lua-language-server' },
+  cmd = { 'lua-language-server' },
   settings = {
     Lua = {
       telemetry = { enable = false },
