@@ -270,7 +270,7 @@ nvim_lsp['lua_ls'].setup {
 
 nvim_lsp.csharp_ls.setup {
   cmd = { exp'~/.dotnet/tools/csharp-ls' },
-  cmd_env = { DOTNET_ROOT = '/opt/dotnet-sdk-bin-6.0' },
+  cmd_env = { DOTNET_ROOT = '/opt/dotnet-sdk-bin-7.0' },
   on_attach = on_attach,
 }
 
