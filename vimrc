@@ -247,6 +247,7 @@ do
   local servers = {
     'pyright',
     'tsserver',
+    'clangd',
     'blueprint_ls',
   }
   for _, lsp in ipairs(servers) do
