@@ -247,6 +247,7 @@ do
   local servers = {
     'pyright',
     'tsserver',
+    'blueprint_ls',
   }
   for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
@@ -365,6 +366,7 @@ lua <<EOF
 require'nvim-treesitter.configs'.setup {
 
   ensure_installed = {
+    'blueprint',
     'c',
     'c_sharp',
     'comment',
