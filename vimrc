@@ -3,6 +3,8 @@ set hidden
 set noswapfile
 
 set mouse=nvr
+aunmenu PopUp.How-to\ disable\ mouse
+aunmenu PopUp.-1-
 
 if !has("nvim")
   syntax enable
