@@ -251,6 +251,7 @@ do
     'tsserver',
     'clangd',
     'blueprint_ls',
+    'gopls',
   }
   for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
