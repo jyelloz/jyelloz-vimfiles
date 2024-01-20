@@ -16,27 +16,12 @@
 [submodule "gtk-vim-syntax"]
 	path = pack/plugins/start/gtk-vim-syntax
 	url = https://github.com/vim-scripts/gtk-vim-syntax.git
-[submodule "pyflakes"]
-	path = bundle/pyflakes
-	url = https://github.com/kevinw/pyflakes-vim.git
-[submodule "python"]
-	path = bundle/python
-	url = https://github.com/vim-scripts/python.vim.git
 [submodule "Modeliner"]
 	path = pack/plugins/start/Modeliner
 	url = https://github.com/vim-scripts/Modeliner.git
-[submodule "clang"]
-	path = bundle/clang
-	url = https://github.com/Rip-Rip/clang_complete.git
 [submodule "vim-gnupg"]
 	path = pack/plugins/start/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg.git
-[submodule "vimpdb"]
-	path = vimpdb
-	url = https://github.com/gotcha/vimpdb.git
-[submodule "project"]
-	path = bundle/project
-	url = https://github.com/vim-scripts/project.tar.gz.git
 [submodule "closetag"]
 	path = pack/plugins/start/closetag
 	url = https://github.com/docunext/closetag.vim.git
@@ -58,12 +43,6 @@
 [submodule "vim-tbone"]
 	path = pack/plugins/start/vim-tbone
 	url = https://github.com/tpope/vim-tbone.git
-[submodule "bufferline"]
-	path = bundle/bufferline
-	url = https://github.com/bling/vim-bufferline.git
-[submodule "jellybeans.vim"]
-	path = bundle/jellybeans.vim
-	url = https://github.com/nanotech/jellybeans.vim.git
 [submodule "vim-handlebars"]
 	path = pack/plugins/start/vim-handlebars
 	url = https://github.com/nono/vim-handlebars.git
@@ -106,9 +85,6 @@
 [submodule "ack.vim"]
 	path = pack/plugins/start/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
-[submodule "color_coded"]
-	path = bundle/color_coded
-	url = https://github.com/jeaye/color_coded.git
 [submodule "gitolite.vim"]
 	path = pack/plugins/start/vim-gitolite
 	url = https://github.com/tmatilai/gitolite.vim.git
@@ -154,19 +130,6 @@
 [submodule "Colorizer"]
 	path = pack/plugins/start/Colorizer
 	url = https://github.com/chrisbra/Colorizer.git
-[submodule "pack/plugins/start/vim-monokai-pro"]
-	path = pack/plugins/start/vim-monokai-pro
-	url = https://github.com/phanviet/vim-monokai-pro.git
-[submodule "pack/plugins/start/vim-snazzy"]
-	path = pack/plugins/start/vim-snazzy
-	url = https://github.com/connorholyday/vim-snazzy.git
-[submodule "pack/plugins/start/sourcerer"]
-	path = pack/plugins/start/sourcerer
-	url = https://github.com/xero/sourcerer.git
-[submodule "pack/plugins/start/coc.nvim"]
-	path = pack/plugins/start/coc.nvim
-	url = https://github.com/neoclide/coc.nvim.git
-	branch = release
 [submodule "pack/plugins/start/tabular"]
 	path = pack/plugins/start/tabular
 	url = https://github.com/godlygeek/tabular.git
