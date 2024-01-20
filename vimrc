@@ -197,8 +197,6 @@ let g:ackprg = 'rg --vimgrep --no-heading'
 " {{{ LSP
 
 lua << EOF
--- local rust_tools = require'rust-tools'
---rust_tools.setup({})
 local nvim_lsp = require('lspconfig')
 local exp = vim.fn.expand
 
@@ -245,6 +243,7 @@ do
     'clangd',
     'blueprint_ls',
     'gopls',
+    'rust_analyzer',
   }
   for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
@@ -281,31 +280,6 @@ do
   require('clangd_extensions').setup(opts)
 end
 
-do
-  local opts = {
-    server = {
-      on_attach = on_attach,
-      settings = {
-        ['rust-analyzer'] = {
-          diagnostics = {
-            disabled = {
-              -- For RTIC which generates non-standard variable names.
-              'incorrect-ident-case',
-              -- For RTIC which uses a macro that rust-analyzer can't find.
-              'unresolved-proc-macro',
-              'unresolved-macro-call',
-            },
-          },
-          check = {
-            command = "clippy",
-            extraArgs = { "--all", "--", "-W", "clippy::all" },
-          },
-        },
-      },
-    },
-  }
-  require('rust-tools').setup(opts)
-end
 EOF
 
 " }}}

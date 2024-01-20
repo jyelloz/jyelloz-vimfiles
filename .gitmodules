@@ -167,9 +167,6 @@
 	path = pack/plugins/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
 	branch = release
-[submodule "pack/plugins/start/rust.vim"]
-	path = pack/plugins/start/rust.vim
-	url = https://github.com/rust-lang/rust.vim
 [submodule "pack/plugins/start/tabular"]
 	path = pack/plugins/start/tabular
 	url = https://github.com/godlygeek/tabular.git
@@ -218,9 +215,6 @@
 [submodule "pack/plugins/start/nvim-web-devicons"]
 	path = pack/plugins/start/nvim-web-devicons
 	url = https://github.com/kyazdani42/nvim-web-devicons.git
-[submodule "pack/plugins/start/rust-tools.nvim"]
-	path = pack/plugins/start/rustaceanvim
-	url = https://github.com/mrcjkb/rustaceanvim.git
 [submodule "pack/plugins/start/nvim-dap"]
 	path = pack/plugins/start/nvim-dap
 	url = https://github.com/mfussenegger/nvim-dap.git
