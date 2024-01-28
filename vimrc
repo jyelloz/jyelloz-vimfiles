@@ -381,6 +381,12 @@ EOF
 
 " }}}
 
+" {{{ Fidget
+lua << EOF
+require("fidget").setup {}
+EOF
+" }}}
+
 " {{{ Trouble
 lua << EOF
 require'nvim-web-devicons'.setup {
