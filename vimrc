@@ -234,6 +234,10 @@ local on_attach = function(client, bufnr)
 
 end
 
+local common_flags = {
+  debounce_text_changes = 150,
+}
+
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
 do
@@ -248,9 +252,7 @@ do
   for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
       on_attach = on_attach,
-      flags = {
-        debounce_text_changes = 150,
-      },
+      flags = common_flags,
     }
   end
 end
@@ -262,12 +264,14 @@ nvim_lsp['lua_ls'].setup {
       telemetry = { enable = false },
     },
   },
+  flags = common_flags,
   on_attach = on_attach,
 }
 
 nvim_lsp.csharp_ls.setup {
   cmd = { exp'~/.dotnet/tools/csharp-ls' },
   cmd_env = { DOTNET_ROOT = '/opt/dotnet-sdk-bin-7.0' },
+  flags = common_flags,
   on_attach = on_attach,
 }
 
@@ -353,6 +357,8 @@ require'nvim-treesitter.configs'.setup {
     'lua',
     'make',
     'markdown',
+    'markdown_inline',
+    'meson',
     'ninja',
     'python',
     'regex',
