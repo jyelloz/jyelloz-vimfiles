@@ -201,7 +201,8 @@
 	url = https://github.com/rkaminsk/vim-syntax-clingo.git
 [submodule "pack/plugins/start/base16-vim"]
 	path = pack/plugins/start/base16-vim
-	url = https://github.com/base16-project/base16-vim.git
+	url = https://github.com/tinted-theming/base16-vim.git
+	branch = main
 [submodule "pack/plugins/start/clangd_extensions.nvim"]
 	path = pack/plugins/start/clangd_extensions.nvim
 	url = https://github.com/p00f/clangd_extensions.nvim.git
