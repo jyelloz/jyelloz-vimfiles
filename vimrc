@@ -196,6 +196,8 @@ let g:ackprg = 'rg --vimgrep --no-heading'
 
 " {{{ LSP
 
+command A :ClangdSwitchSourceHeader
+
 lua << EOF
 local nvim_lsp = require('lspconfig')
 local exp = vim.fn.expand
