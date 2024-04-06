@@ -7,9 +7,6 @@
 [submodule "Align"]
 	path = pack/plugins/start/Align
 	url = https://github.com/vim-scripts/Align.git
-[submodule "a"]
-	path = pack/plugins/start/a
-	url = https://github.com/vim-scripts/a.vim.git
 [submodule "securemodelines"]
 	path = pack/plugins/start/securemodelines
 	url = https://github.com/ciaranm/securemodelines.git
