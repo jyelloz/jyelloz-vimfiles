@@ -414,6 +414,16 @@ nnoremap <leader>fs <cmd>Telescope lsp_dynamic_workspace_symbols<cr>
 nnoremap <leader>fd <cmd>Telescope lsp_document_diagnostics<cr>
 nnoremap <leader>fD <cmd>Telescope lsp_workspace_diagnostics<cr>
 nnoremap <leader>fr <cmd>Telescope lsp_references<cr>
+
+lua << EOF
+require "telescope".setup {
+  pickers = {
+    colorscheme = {
+      enable_preview = true
+    }
+  }
+}
+EOF
 " }}}
 
 " {{{ JSX
