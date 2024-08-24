@@ -410,11 +410,14 @@ nnoremap <leader>fr <cmd>Telescope lsp_references<cr>
 
 lua << EOF
 require "telescope".setup {
+  defaults = {
+    path_display = {"filename_first"},
+  },
   pickers = {
     colorscheme = {
       enable_preview = true
     }
-  }
+  },
 }
 EOF
 " }}}
