@@ -237,8 +237,8 @@ local common_flags = {
 -- map buffer local keybindings when the language server attaches
 do
   local servers = {
-    'pyright',
-    'tsserver',
+    'pylsp',
+    'ts_ls',
     'clangd',
     'blueprint_ls',
     'gopls',
