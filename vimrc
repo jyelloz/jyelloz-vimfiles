@@ -67,7 +67,7 @@ if !has("nvim")
   let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
 endif
 set termguicolors
-let base16colorspace=256
+let tinted_colorspace=256
 if filereadable(expand("~/.vimrc_background"))
   source ~/.vimrc_background
 else
