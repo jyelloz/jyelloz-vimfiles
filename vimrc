@@ -288,7 +288,7 @@ lua << EOF
 local dap = require('dap')
 dap.adapters.lldb = {
   type = 'executable',
-  command = 'lldb-vscode', -- adjust as needed
+  command = 'lldb-dap',
   name = "lldb"
 }
 local cconf = {
