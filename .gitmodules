@@ -1,6 +1,3 @@
-[submodule "genindent.vim"]
-	path = pack/plugins/start/genindent.vim
-	url = https://github.com/vim-scripts/genindent.vim.git
 [submodule "molokai"]
 	path = pack/plugins/start/molokai
 	url = https://github.com/vim-scripts/molokai.git
@@ -13,9 +10,6 @@
 [submodule "gtk-vim-syntax"]
 	path = pack/plugins/start/gtk-vim-syntax
 	url = https://github.com/vim-scripts/gtk-vim-syntax.git
-[submodule "Modeliner"]
-	path = pack/plugins/start/Modeliner
-	url = https://github.com/vim-scripts/Modeliner.git
 [submodule "vim-gnupg"]
 	path = pack/plugins/start/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg.git
@@ -37,15 +31,6 @@
 [submodule "vim-dispatch"]
 	path = pack/plugins/start/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch.git
-[submodule "vim-tbone"]
-	path = pack/plugins/start/vim-tbone
-	url = https://github.com/tpope/vim-tbone.git
-[submodule "vim-handlebars"]
-	path = pack/plugins/start/vim-handlebars
-	url = https://github.com/nono/vim-handlebars.git
-[submodule "vim-javascript"]
-	path = pack/plugins/start/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
 [submodule "sieve.vim"]
 	path = pack/plugins/start/sieve.vim
 	url = https://github.com/vim-scripts/sieve.vim.git
@@ -64,24 +49,15 @@
 [submodule "editorconfig"]
 	path = pack/plugins/start/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim.git
-[submodule "moonscript-vim"]
-	path = pack/plugins/start/moonscript-vim
-	url = https://github.com/leafo/moonscript-vim.git
 [submodule "vim-misc"]
 	path = pack/plugins/start/vim-misc
 	url = https://github.com/xolox/vim-misc.git
-[submodule "javascript-libraries-syntax"]
-	path = pack/plugins/start/javascript-libraries-syntax
-	url = https://github.com/othree/javascript-libraries-syntax.vim.git
 [submodule "vim-fireplace"]
 	path = pack/plugins/start/vim-fireplace
 	url = https://github.com/tpope/vim-fireplace.git
 [submodule "vim-kconfig"]
 	path = pack/plugins/start/vim-kconfig
 	url = https://github.com/chrisbra/vim-kconfig
-[submodule "ack.vim"]
-	path = pack/plugins/start/ack.vim
-	url = https://github.com/mileszs/ack.vim.git
 [submodule "gitolite.vim"]
 	path = pack/plugins/start/vim-gitolite
 	url = https://github.com/tmatilai/gitolite.vim.git
@@ -94,9 +70,6 @@
 [submodule "async.vim"]
 	path = pack/plugins/start/async.vim
 	url = https://github.com/prabirshrestha/async.vim.git
-[submodule "vim-lua"]
-	path = pack/plugins/start/vim-lua
-	url = https://github.com/tbastos/vim-lua
 [submodule "vim-toml"]
 	path = pack/plugins/start/vim-toml
 	url = https://github.com/cespare/vim-toml.git
@@ -112,12 +85,6 @@
 [submodule "info.vim"]
 	path = pack/plugins/start/info.vim
 	url = https://gitlab.com/HiPhish/info.vim.git
-[submodule "vim-jsx"]
-	path = pack/plugins/start/vim-jsx
-	url = https://github.com/mxw/vim-jsx.git
-[submodule "vinfo"]
-	path = pack/plugins/start/vinfo
-	url = https://github.com/alx741/vinfo.git
 [submodule "vim-plugin-AnsiEsc"]
 	path = pack/plugins/start/vim-plugin-AnsiEsc
 	url = https://github.com/powerman/vim-plugin-AnsiEsc
@@ -190,9 +157,6 @@
 [submodule "pack/plugins/start/telescope-dap.nvim"]
 	path = pack/plugins/start/telescope-dap.nvim
 	url = https://github.com/nvim-telescope/telescope-dap.nvim
-[submodule "pack/plugins/start/vim-syntax-clingo"]
-	path = pack/plugins/start/vim-syntax-clingo
-	url = https://github.com/rkaminsk/vim-syntax-clingo.git
 [submodule "pack/plugins/start/base16-vim"]
 	path = pack/plugins/start/tinted-vim
 	url = https://github.com/tinted-theming/tinted-vim.git
@@ -203,9 +167,6 @@
 [submodule "pack/plugins/start/bpftrace.vim"]
 	path = pack/plugins/start/bpftrace.vim
 	url = https://github.com/mmarchini/bpftrace.vim.git
-[submodule "pack/plugins/start/vimwiki"]
-	path = pack/plugins/start/vimwiki
-	url = https://github.com/vimwiki/vimwiki.git
 [submodule "pack/plugins/start/gitsigns.nvim"]
 	path = pack/plugins/start/gitsigns.nvim
 	url = https://github.com/lewis6991/gitsigns.nvim.git
