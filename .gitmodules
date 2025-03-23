@@ -100,9 +100,6 @@
 [submodule "pack/plugins/start/nerdfont.vim"]
 	path = pack/plugins/start/nerdfont.vim
 	url = https://github.com/lambdalisue/nerdfont.vim
-[submodule "pack/plugins/start/lightline.vim"]
-	path = pack/plugins/start/lightline.vim
-	url = https://github.com/itchyny/lightline.vim
 [submodule "pack/plugins/start/vim-devicons"]
 	path = pack/plugins/start/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons
