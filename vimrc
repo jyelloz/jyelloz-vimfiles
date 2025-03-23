@@ -427,26 +427,9 @@ require "telescope".setup {
 EOF
 " }}}
 
-" {{{ JSX
-let g:jsx_ext_required = 0
-" }}}
-
 " {{{ Markdown
 let g:vim_markdown_folding_disabled = 1
 autocmd FileType markdown setlocal conceallevel=2
-" }}}
-
-" {{{ clingo/gringo
-autocmd FileType gringo setlocal commentstring=%%\ %s
-" }}}
-
-" {{{ vimwiki
-let g:vimwiki_global_ext = 0
-let g:vimwiki_list = [{
-      \ 'path': '~/Documents/vimwiki/',
-      \ 'syntax': 'markdown',
-      \ 'ext': '.md',
-      \}]
 " }}}
 
 set tags+=./tags,~/tags,~/.vim/tags
