@@ -176,3 +176,6 @@
 [submodule "pack/plugins/start/nvim-nio"]
 	path = pack/plugins/start/nvim-nio
 	url = https://github.com/nvim-neotest/nvim-nio.git
+[submodule "pack/plugins/start/lualine.nvim"]
+	path = pack/plugins/start/lualine.nvim
+	url = https://github.com/nvim-lualine/lualine.nvim.git
