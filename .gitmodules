@@ -7,9 +7,6 @@
 [submodule "securemodelines"]
 	path = pack/plugins/start/securemodelines
 	url = https://github.com/ciaranm/securemodelines.git
-[submodule "gtk-vim-syntax"]
-	path = pack/plugins/start/gtk-vim-syntax
-	url = https://github.com/vim-scripts/gtk-vim-syntax.git
 [submodule "vim-gnupg"]
 	path = pack/plugins/start/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg.git
