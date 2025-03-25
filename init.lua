@@ -47,7 +47,7 @@ do
   vim.g.tinted_colorspace = 256
   vim.opt.termguicolors = true
   local vimrc = vim.fn.expand('~/.vimrc_background')
-  if vim.fn.filereadable(vimrc) then
+  if vim.fn.filereadable(vimrc) == 1 then
     vim.cmd.source(vimrc)
   else
     vim.cmd.colorscheme'base16-tomorrow-night-eighties'
