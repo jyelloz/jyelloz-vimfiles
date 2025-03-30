@@ -1,4 +1,4 @@
-local f = require'telescope.builtin'
+local f = require 'telescope.builtin'
 vim.keymap.set('n', '<leader>ff', f.find_files)
 vim.keymap.set('n', '<leader>fg', f.live_grep)
 vim.keymap.set('n', '<leader>fb', f.buffers)
@@ -8,13 +8,13 @@ vim.keymap.set('n', '<leader>fd', f.diagnostics)
 vim.keymap.set('n', '<leader>fr', f.lsp_references)
 vim.keymap.set('n', '<leader>fm', f.man_pages)
 
-require'telescope'.setup{
+require('telescope').setup {
   defaults = {
-    path_display = {'filename_first'},
+    path_display = { 'filename_first' },
   },
   pickers = {
     colorscheme = {
-      enable_preview = true
-    }
+      enable_preview = true,
+    },
   },
 }

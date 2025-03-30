@@ -1,9 +1,9 @@
-local dap = require'dap'
+local dap = require 'dap'
 
 dap.adapters.lldb = {
   type = 'executable',
   command = 'lldb-dap',
-  name = 'lldb'
+  name = 'lldb',
 }
 local cconf = {
   {
@@ -11,7 +11,11 @@ local cconf = {
     type = 'lldb',
     request = 'launch',
     program = function()
-      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+      return vim.fn.input(
+        'Path to executable: ',
+        vim.fn.getcwd() .. '/',
+        'file'
+      )
     end,
     cwd = '${workspaceFolder}',
     stopOnEntry = false,
@@ -23,9 +27,9 @@ dap.configurations.c = cconf
 dap.configurations.cpp = cconf
 dap.configurations.rust = cconf
 
-local dapui = require'dapui'
-dapui.setup{}
-local dapvirtual = require'nvim-dap-virtual-text'
+local dapui = require 'dapui'
+dapui.setup {}
+local dapvirtual = require 'nvim-dap-virtual-text'
 dapvirtual.setup()
 
 dap.listeners.after.event_initialized['dapui_config'] = function()
