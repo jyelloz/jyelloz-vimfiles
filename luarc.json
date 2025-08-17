@@ -1,3 +1,6 @@
 {
-  "workspace.library": ["/usr/share/nvim/runtime/lua"],
+  "workspace.library": [
+    "/usr/share/nvim/runtime/lua",
+    "pack/plugins/start/?/lua"
+  ]
 }
