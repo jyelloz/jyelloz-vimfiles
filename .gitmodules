@@ -58,9 +58,6 @@
 [submodule "gitolite.vim"]
 	path = pack/plugins/start/vim-gitolite
 	url = https://github.com/tmatilai/gitolite.vim.git
-[submodule "vim-unimpaired"]
-	path = pack/plugins/start/vim-unimpaired
-	url = https://github.com/tpope/vim-unimpaired
 [submodule "bufkill"]
 	path = pack/plugins/start/bufkill
 	url = https://github.com/qpkorr/vim-bufkill.git
