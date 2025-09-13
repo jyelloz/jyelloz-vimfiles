@@ -4,8 +4,11 @@ vim.opt.hidden = true
 vim.opt.swapfile = false
 
 vim.opt.mouse = 'nvr'
-pcall(vim.cmd.aunmenu, 'PopUp.How-to\\ disable\\ mouse')
-pcall(vim.cmd.aunmenu, 'PopUp.-1-')
+vim.cmd.aunmenu {
+  args = { [[PopUp.How-to\ disable\ mouse]] },
+  mods = { emsg_silent = true },
+}
+vim.cmd.aunmenu { args = { 'PopUp.-2-' }, mods = { emsg_silent = true } }
 
 vim.g.mapleader = ','
 
