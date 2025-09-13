@@ -121,6 +121,7 @@
 [submodule "pack/plugins/start/nvim-treesitter"]
 	path = pack/plugins/start/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+	branch = main
 [submodule "pack/plugins/start/lsp-colors.nvim"]
 	path = pack/plugins/start/lsp-colors.nvim
 	url = https://github.com/folke/lsp-colors.nvim.git
