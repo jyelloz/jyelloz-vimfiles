@@ -59,7 +59,7 @@ do
 end
 
 vim.opt.list = true
-vim.opt.listchars = 'trail:.'
+vim.opt.listchars = 'trail:░,tab:▓▒'
 
 vim.opt.incsearch = true
 vim.opt.hlsearch = false
