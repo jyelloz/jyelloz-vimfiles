@@ -1,3 +1,4 @@
+vim.opt.shada = ''
 vim.opt.compatible = false
 vim.opt.hidden = true
 vim.opt.swapfile = false
