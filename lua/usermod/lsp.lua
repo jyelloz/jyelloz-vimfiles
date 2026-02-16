@@ -79,10 +79,6 @@ vim.lsp.config('csharp_ls', {
   cmd_env = { DOTNET_ROOT = '/opt/dotnet-sdk-bin-7.0' },
 })
 
-vim.lsp.config('zuban', {
-  cmd = { 'uv', 'run', 'zuban', 'server' },
-})
-
 do
   local servers = {
     'blueprint_ls',
