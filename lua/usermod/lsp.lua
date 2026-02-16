@@ -1,11 +1,10 @@
 vim.cmd.command('A', ':ClangdSwitchSourceHeader')
 
-local nvim_lsp = require 'lspconfig'
 local exp = vim.fn.expand
 
-local on_attach = function(_, bufnr)
+local on_attach = function(ev)
   local function buf_set_keymap(...)
-    vim.api.nvim_buf_set_keymap(bufnr, ...)
+    vim.api.nvim_buf_set_keymap(ev.buf, ...)
   end
 
   local opts = { noremap = true, silent = true }
@@ -65,44 +64,40 @@ local on_attach = function(_, bufnr)
   )
 end
 
-local common_flags = {
-  debounce_text_changes = 150,
-}
+vim.api.nvim_create_autocmd('LspAttach', { callback = on_attach })
 
-do
-  local servers = {
-    'pylsp',
-    'ts_ls',
-    'clangd',
-    'blueprint_ls',
-    'gopls',
-    'rust_analyzer',
-  }
-  for _, lsp in ipairs(servers) do
-    nvim_lsp[lsp].setup {
-      on_attach = on_attach,
-      flags = common_flags,
-    }
-  end
-end
-
-nvim_lsp.lua_ls.setup {
-  cmd = { 'lua-language-server' },
+vim.lsp.config('lua_ls', {
   settings = {
     Lua = {
       telemetry = { enable = false },
     },
   },
-  flags = common_flags,
-  on_attach = on_attach,
-}
+})
 
-nvim_lsp.csharp_ls.setup {
+vim.lsp.config('csharp_ls', {
   cmd = { exp '~/.dotnet/tools/csharp-ls' },
   cmd_env = { DOTNET_ROOT = '/opt/dotnet-sdk-bin-7.0' },
-  flags = common_flags,
-  on_attach = on_attach,
-}
+})
+
+vim.lsp.config('zuban', {
+  cmd = { 'uv', 'run', 'zuban', 'server' },
+})
+
+do
+  local servers = {
+    'blueprint_ls',
+    'clangd',
+    'csharp_ls',
+    'gopls',
+    'lua_ls',
+    'rust_analyzer',
+    'ts_ls',
+    'ty',
+  }
+  for _, lsp in ipairs(servers) do
+    vim.lsp.enable(lsp)
+  end
+end
 
 do
   local opts = {
