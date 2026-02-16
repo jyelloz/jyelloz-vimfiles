@@ -55,9 +55,8 @@ do
   end
 end
 
-vim.showmatch = true
-vim.cmd.highlight('WhitespaceEOL', 'ctermbg=red guibg=red')
-vim.cmd.match('WhitespaceEOL', '/\\s\\+$/')
+vim.opt.list = true
+vim.opt.listchars = 'trail:░,tab:▓▒'
 
 vim.opt.incsearch = true
 vim.opt.hlsearch = false
