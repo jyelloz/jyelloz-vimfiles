@@ -85,6 +85,7 @@ do
     'clangd',
     'csharp_ls',
     'gopls',
+    'jdtls',
     'lua_ls',
     'rust_analyzer',
     'ts_ls',
